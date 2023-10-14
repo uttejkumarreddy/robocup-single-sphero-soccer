@@ -1,4 +1,3 @@
-from Environment import BaseEnvironment
 from Configurations import Environment as envProps
 from Environment.Player import Player
 from Environment.Ball import Ball
@@ -9,7 +8,7 @@ import numpy as np
 import os
 
 
-class Environment_1A_0D_0K(BaseEnvironment.Environment):
+class Environment_1A_0D_0K():
     def __init__(self):
         self.environment = "1A_0D_0K.xml"
         self.set_env_path(self.environment)
@@ -75,7 +74,7 @@ class Environment_1A_0D_0K(BaseEnvironment.Environment):
 
     def set_env_path(self, environment):
         dirname = os.path.dirname(__file__)
-        abspath = os.path.join(dirname + "/../Models/" + environment)
+        abspath = os.path.join(dirname + "/../Mujoco/" + environment)
         self.env_path = abspath
 
     def get_env_path(self):
