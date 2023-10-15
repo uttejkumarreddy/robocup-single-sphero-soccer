@@ -14,3 +14,4 @@ Done: When player touches ball
 Reward: reward_vel_to_ball
 Checkpoint 1: 
 The player kicked the ball but the episode did not terminate.
+Fixed the contact detection algorithm. Reduced Field size to 0.5x0.5. Episodes now terminate on contact with ball.

@@ -143,6 +143,8 @@ class Simulation:
 				self.observation = new_observation
 
 		def run(self, episode_count):
+				self.logger.write("START: Episode count: {0}".format(episode_count))
+				
 				self.reset()
 				mj.set_mjcb_control(self.controller)
 
@@ -155,6 +157,9 @@ class Simulation:
 						while self.data.time - time_prev < 1 / self.frames_per_second:
 								step_counter += 1
 								mj.mj_step(self.model, self.data)
+
+								if (self.done):
+									break
 
 						# Train networks for every 4 steps
 						if step_counter % 4 == 0:
@@ -182,7 +187,7 @@ class Simulation:
 						glfw.poll_events()
 
 				self.logger.write("Final player position: {0}, ball position: {1}".format(self.env.player.get_position(self.data), self.env.ball.get_position(self.data)))
-				self.logger.write("Episode count {0}, Score: {1}".format(episode_count, self.score))
+				self.logger.write("END: Episode count {0}, Episode length: {1}, Score: {2}".format(episode_count, self.data.time ,self.score))
 
 				# Save models every 20 episodes
 				if episode_count % 20 == 0:

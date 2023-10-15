@@ -4,6 +4,7 @@ import math
 
 from AI.DDPG.Agent import Agent
 from Configurations import Environment as envProps
+from Utilities.Logger import Logger
 
 class Player:
 		def __init__(self, model, team, name, observation_space, action_space):
@@ -27,6 +28,9 @@ class Player:
 				self.ai.load_models()
 
 				self.heading = 0
+
+				logger = Logger()
+				logger.write("Player {0} initialized. id_body {1} id_geom {2} id_joint {3}".format(self.name, self.id_body, self.id_geom, self.id_joint))
 
 		def get_position(self, data):
 				return data.qpos[self.id_joint * 7 : self.id_joint * 7 + 3]

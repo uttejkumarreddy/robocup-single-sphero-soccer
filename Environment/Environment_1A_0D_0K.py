@@ -150,8 +150,9 @@ class Environment_1A_0D_0K():
 				# Check if ball is kicked
 				done = False
 				contacts = data.contact
-				for contact in contacts:
-					if contact.geom1 == self.player.id_geom and contact.geom2 == self.ball.id_geom:
+				for c in contacts:
+					if c.geom1 == self.ball.id_geom and c.geom2 == self.player.id_geom:
+						print(c.geom1, c.geom2)
 						done = True	
 				
 				info = {}
