@@ -16,8 +16,11 @@ The player kicked the ball but the episode did not terminate.
 Fixed the contact detection algorithm. Reduced Field size to 0.5x0.5. Episodes now terminate on contact with ball.
 
 Experiment 9: 
-Field size: 5x5, Randomize player: True, Randomize ball: True
+Field size: 1x1, Randomize player: True, Randomize ball: True
 Simulation Time: 45 secs
 Done: When player touches ball
 Reward: +100 for touching the ball, -1 per timestep
+Checkpoint 1:
+Field size: 10x10
+Increase Reward to +10000 to show significance as accumulated score over 45 secs ~-22000.
  

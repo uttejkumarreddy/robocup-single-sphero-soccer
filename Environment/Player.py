@@ -71,5 +71,5 @@ class Player:
 			contacts = data.contact
 			for c in contacts:
 				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
-					return 100
+					return 10000
 			return -1

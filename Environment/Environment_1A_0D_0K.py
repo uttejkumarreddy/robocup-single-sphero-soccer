@@ -69,6 +69,8 @@ class Environment_1A_0D_0K():
 				)
 
 				self.logger = Logger()
+				self.logger.write('Observation space: {0}'.format(self.observation_space))
+				self.logger.write('Action space: {0}'.format(self.action_space))
 
 		def set_env_path(self, environment):
 				dirname = os.path.dirname(__file__)
@@ -100,25 +102,20 @@ class Environment_1A_0D_0K():
 		def get_observation_space(self, data):
 				player_position = self.player.get_position(data)
 				player_velocity = self.player.get_velocity(data)[:2]
-				player_speed, player_rotation = self.get_speed_and_rotation_from_velocities(
-						player_velocity[0], player_velocity[1]
-				)
+				player_speed, player_rotation = self.player.get_velocity(data)[:2], [self.player.heading]
 
 				ball_position = self.ball.get_position(data)
 				ball_velocity = self.ball.get_velocity(data)[:2]
-				ball_speed, ball_rotation = self.get_speed_and_rotation_from_velocities(
-						ball_velocity[0], ball_velocity[1]
-				)
+				ball_speed, ball_rotation = self.get_speed_and_rotation_from_velocity(ball_velocity)
 
-				player_state = np.concatenate(
-						(player_position[:2], player_speed, player_rotation)
-				)
+				player_state = np.concatenate((player_position[:2], player_speed, player_rotation))
 				ball_state = np.concatenate((ball_position[:2], ball_speed, ball_rotation))
 
 				state_space = np.concatenate((player_state, ball_state))
 				return state_space
 
-		def get_speed_and_rotation_from_velocities(self, x_vel, y_vel):
+		def get_speed_and_rotation_from_velocity(self, velocity):
+				x_vel, y_vel = velocity[0], velocity[1]
 				speed = np.sqrt(x_vel**2 + y_vel**2)
 				rotation = ((np.arctan2(y_vel, x_vel)) + 360) % 360
 				return [speed], [rotation]
@@ -152,7 +149,6 @@ class Environment_1A_0D_0K():
 				contacts = data.contact
 				for c in contacts:
 					if c.geom1 == self.ball.id_geom and c.geom2 == self.player.id_geom:
-						print(c.geom1, c.geom2)
 						done = True	
 				
 				info = {}
