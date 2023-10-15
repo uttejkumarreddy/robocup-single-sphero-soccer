@@ -29,4 +29,7 @@ The player is not kicking the ball sufficiently in 10x10 environment. Reducing t
 Checkpoint 3:
 Constant reward -1 is not incentivizing the ball enough to move. Bringing back reward_vel_to_ball.
 Checkpoint 4:
-Increase the Mujoco min bolt speed in Configurations from 0 to 10 for faster exploration. 
+Increase the Mujoco min bolt speed in Configurations from 0 to 10 for faster exploration.
+Fix velocity range in observation space from [0,255] to [0,20] as calculated observation space returns velocities in that range.
+Conclusion:
+The player is still moving like its actively avoiding the ball. The reward function needs to be verified.
