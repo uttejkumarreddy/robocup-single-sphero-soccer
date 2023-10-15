@@ -53,13 +53,16 @@ class Player:
 		def get_reward(self, data, ball):
 			player_position = self.get_position(data)[:2]
 			player_velocity = self.get_velocity(data)[:2]
+			player_velocity_norm = player_velocity / np.linalg.norm(player_velocity)
+
 			ball_position = ball.get_position(data)[:2]
 			ball_velocity = ball.get_velocity(data)[:2]
+
 			goal_position = np.array(envProps.GOAL_HOME)
 
 			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
 			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
-			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
+			reward_vel_to_ball = -np.dot(player_velocity_norm, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
 			# ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
@@ -71,6 +74,6 @@ class Player:
 			reward_ball_kicked = 0
 			for c in contacts:
 				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
-					reward_ball_kicked = 10000
-			
+					reward_ball_kicked = 100
+
 			return reward_vel_to_ball + reward_ball_kicked

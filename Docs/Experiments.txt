@@ -33,3 +33,11 @@ Increase the Mujoco min bolt speed in Configurations from 0 to 10 for faster exp
 Fix velocity range in observation space from [0,255] to [0,20] as calculated observation space returns velocities in that range.
 Conclusion:
 The player is still moving like its actively avoiding the ball. The reward function needs to be verified.
+
+Experiment 10:
+Changelog: 
+reward_vel_to_ball now calculates on normalized player_velocity vector.
+reward_vel_to_ball is now assigned '-' sign as with '+' sign the player seems to actively avoid kicking the ball.
+reward_ball_kicked changed to +100.
+Conclusion:
+Agent is still not decisively hitting the ball
