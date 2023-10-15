@@ -172,3 +172,25 @@
 2023-10-15 09:16:29.681768: Saving checkpoint to: AI/DDPG/saved_models/TargetCritic_ddpg
 2023-10-15 09:16:29.695057: START: Episode count: 41
 2023-10-15 09:16:29.704568: Initial player position: [ 0.05440083 -0.344583    0.365     ], ball position: [-0.86717779  0.22691634  0.215     ]
+2023-10-15 09:25:10.767836: Observation space: Box([-10. -10.   0.   0. -10. -10.   0.   0.], [1.00e+01 1.00e+01 2.55e+02 3.59e+02 1.00e+01 1.00e+01 2.00e+04 3.59e+02], (8,), float32)
+2023-10-15 09:25:10.774786: Action space: Box(0.0, [359. 255.], (2,), float32)
+2023-10-15 09:25:10.788782: Initializing DDPG Agent with alpha 0.0003 beta 0.0003 input_dims [8] tau 0.005 gamma 0.99 n_actions 2 max_size 1000000 layer1_size 400 layer2_size 300 batch_size 64
+2023-10-15 09:25:13.481146: Loading checkpoint from: AI/DDPG/saved_models/Actor_ddpg
+2023-10-15 09:25:13.492107: Loading checkpoint from: AI/DDPG/saved_models/TargetActor_ddpg
+2023-10-15 09:25:13.503077: Loading checkpoint from: AI/DDPG/saved_models/Critic_ddpg
+2023-10-15 09:25:13.512490: Loading checkpoint from: AI/DDPG/saved_models/TargetCritic_ddpg
+2023-10-15 09:25:13.522478: Player home_player_1 initialized. id_body 3 id_geom 28 id_joint 1
+2023-10-15 09:25:13.529397: Ball ball initialized. id_body 2 id_geom 27 id_joint 0
+2023-10-15 09:25:14.302675: START: Episode count: 1
+2023-10-15 09:25:14.310697: Initial player position: [-4.98282589  6.27470558  0.365     ], ball position: [-7.1767216   1.99780507  0.215     ]
+2023-10-15 09:28:20.928214: Observation space: Box([-10. -10.   0.   0. -10. -10.   0.   0.], [1.00e+01 1.00e+01 2.55e+02 3.59e+02 1.00e+01 1.00e+01 2.00e+04 3.59e+02], (8,), float32)
+2023-10-15 09:28:20.935227: Action space: Box(0.0, [359. 255.], (2,), float32)
+2023-10-15 09:28:20.943206: Initializing DDPG Agent with alpha 0.0003 beta 0.0003 input_dims [8] tau 0.005 gamma 0.99 n_actions 2 max_size 1000000 layer1_size 400 layer2_size 300 batch_size 64
+2023-10-15 09:28:23.634272: Loading checkpoint from: AI/DDPG/saved_models/Actor_ddpg
+2023-10-15 09:28:23.644243: Loading checkpoint from: AI/DDPG/saved_models/TargetActor_ddpg
+2023-10-15 09:28:23.654217: Loading checkpoint from: AI/DDPG/saved_models/Critic_ddpg
+2023-10-15 09:28:23.664227: Loading checkpoint from: AI/DDPG/saved_models/TargetCritic_ddpg
+2023-10-15 09:28:23.673663: Player home_player_1 initialized. id_body 3 id_geom 28 id_joint 1
+2023-10-15 09:28:23.680612: Ball ball initialized. id_body 2 id_geom 27 id_joint 0
+2023-10-15 09:28:24.213978: START: Episode count: 1
+2023-10-15 09:28:24.223984: Initial player position: [0.22543032 8.33251296 0.365     ], ball position: [ 0.87456332 -7.1918363   0.215     ]

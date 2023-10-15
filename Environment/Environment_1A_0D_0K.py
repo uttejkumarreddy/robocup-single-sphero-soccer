@@ -98,15 +98,25 @@ class Environment_1A_0D_0K():
 
 		def get_away_team_size(self):
 				return self.away_team_size
+			
+		def get_speed_from_velocity(self, velocity):
+				x_vel, y_vel = velocity[0], velocity[1]
+				speed = np.sqrt(x_vel**2 + y_vel**2)
+				return [speed]
+
+		def get_heading_from_velocity(self, velocity):
+				x_vel, y_vel = velocity[0], velocity[1]
+				rotation = ((np.arctan2(y_vel, x_vel)) + 360) % 360
+				return [rotation]
 
 		def get_observation_space(self, data):
 				player_position = self.player.get_position(data)
 				player_velocity = self.player.get_velocity(data)[:2]
-				player_speed, player_rotation = self.player.get_velocity(data)[:2], [self.player.heading]
+				player_speed, player_rotation = self.get_speed_from_velocity(player_velocity), [self.player.heading]
 
 				ball_position = self.ball.get_position(data)
 				ball_velocity = self.ball.get_velocity(data)[:2]
-				ball_speed, ball_rotation = self.get_speed_and_rotation_from_velocity(ball_velocity)
+				ball_speed, ball_rotation = self.get_speed_from_velocity(ball_velocity), self.get_heading_from_velocity(ball_velocity)
 
 				player_state = np.concatenate((player_position[:2], player_speed, player_rotation))
 				ball_state = np.concatenate((ball_position[:2], ball_speed, ball_rotation))
@@ -114,11 +124,9 @@ class Environment_1A_0D_0K():
 				state_space = np.concatenate((player_state, ball_state))
 				return state_space
 
-		def get_speed_and_rotation_from_velocity(self, velocity):
-				x_vel, y_vel = velocity[0], velocity[1]
-				speed = np.sqrt(x_vel**2 + y_vel**2)
-				rotation = ((np.arctan2(y_vel, x_vel)) + 360) % 360
-				return [speed], [rotation]
+		
+
+
 
 		def preprocess_sigmoid_actions(self, action):
 				# Actions are in the range [0, 1]
