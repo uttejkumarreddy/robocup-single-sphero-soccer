@@ -66,10 +66,10 @@ class ActorNetwork(nn.Module):
         return x
 
     def save_checkpoint(self):
-        self.logger.write("Saving checkpoint to: " + self.checkpoint_file + "\n")
+        self.logger.write("Saving checkpoint to: " + self.checkpoint_file)
         T.save(self.state_dict(), self.checkpoint_file)
 
     def load_checkpoint(self):
         if os.path.isfile(self.checkpoint_file):
-            self.logger.write("Loading checkpoint from: " + self.checkpoint_file + "\n")
+            self.logger.write("Loading checkpoint from: " + self.checkpoint_file)
             self.load_state_dict(T.load(self.checkpoint_file))

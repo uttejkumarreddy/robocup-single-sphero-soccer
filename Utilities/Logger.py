@@ -25,7 +25,7 @@ class Logger:
 
 	def write(self, message):
 		with open(self.current_log, 'a') as file:
-			file.write(str(datetime.now()) + ': ' + str(message))
+			file.write(str(datetime.now()) + ': ' + str(message) + '\n')
 
 		with open(self.current_log, 'r') as file:
 			if (len(file.readlines()) > 1000):

@@ -17,7 +17,7 @@ class Agent(object):
 							n_actions = 2, max_size = 1000000, 
 							layer1_size = 400, layer2_size = 300, batch_size = 64):
 		self.logger = Logger()
-		self.logger.write("Initializing DDPG Agent with alpha {0} beta {1} input_dims {2} tau {3} gamma {4} n_actions {5} max_size {6} layer1_size {7} layer2_size {8} batch_size {9}\n".format(alpha, beta, input_dims, tau, gamma, n_actions, max_size, layer1_size, layer2_size, batch_size))
+		self.logger.write("Initializing DDPG Agent with alpha {0} beta {1} input_dims {2} tau {3} gamma {4} n_actions {5} max_size {6} layer1_size {7} layer2_size {8} batch_size {9}".format(alpha, beta, input_dims, tau, gamma, n_actions, max_size, layer1_size, layer2_size, batch_size))
 		
 		self.gamma = gamma
 		self.tau = tau
