@@ -16,51 +16,15 @@ class Environment_1A_0D_0K():
 
 				# Action Space
 				self.action_space = spaces.Box(
-						low=np.array(
-								[envProps.BOLT_MIN_ROTATION, envProps.BOLT_MIN_SPEED], dtype=np.float32
-						),
-						high=np.array(
-								[envProps.BOLT_MAX_ROTATION, envProps.BOLT_MAX_SPEED], dtype=np.float32
-						),
+						low=np.array([envProps.BOLT_MIN_ROTATION, envProps.BOLT_MIN_SPEED], dtype=np.float32),
+						high=np.array([envProps.BOLT_MAX_ROTATION, envProps.BOLT_MAX_SPEED], dtype=np.float32),
 				)
 
 				# Observation Space
-				player_state_space_low = np.array(
-						[
-								-envProps.FIELD_LENGTH,
-								-envProps.FIELD_WIDTH,
-								envProps.BOLT_MIN_SPEED,
-								envProps.BOLT_MIN_ROTATION,
-						],
-						dtype=np.float32,
-				)
-				player_state_space_high = np.array(
-						[
-								envProps.FIELD_LENGTH,
-								envProps.FIELD_WIDTH,
-								envProps.BOLT_MAX_SPEED,
-								envProps.BOLT_MAX_ROTATION,
-						],
-						dtype=np.float32,
-				)
-				ball_state_space_low = np.array(
-						[
-								-envProps.FIELD_LENGTH,
-								-envProps.FIELD_WIDTH,
-								envProps.BALL_MIN_SPEED,
-								envProps.BALL_MIN_ROTATION,
-						],
-						dtype=np.float32,
-				)
-				ball_state_space_high = np.array(
-						[
-								envProps.FIELD_LENGTH,
-								envProps.FIELD_WIDTH,
-								envProps.BALL_MAX_SPEED,
-								envProps.BALL_MAX_ROTATION,
-						],
-						dtype=np.float32,
-				)
+				player_state_space_low = np.array([-envProps.FIELD_LENGTH, -envProps.FIELD_WIDTH, envProps.BOLT_ENV_MIN_SPEED, envProps.BOLT_ENV_MIN_ROTATION,], dtype=np.float32,)
+				player_state_space_high = np.array([envProps.FIELD_LENGTH, envProps.FIELD_WIDTH, envProps.BOLT_ENV_MAX_SPEED, envProps.BOLT_ENV_MAX_ROTATION,], dtype=np.float32,)
+				ball_state_space_low = np.array([-envProps.FIELD_LENGTH, -envProps.FIELD_WIDTH, envProps.BALL_ENV_MIN_SPEED, envProps.BALL_ENV_MIN_ROTATION,], dtype=np.float32,)
+				ball_state_space_high = np.array([envProps.FIELD_LENGTH, envProps.FIELD_WIDTH, envProps.BALL_ENV_MAX_SPEED, envProps.BALL_ENV_MAX_ROTATION,], dtype=np.float32,)
 
 				self.observation_space = spaces.Box(
 						low=np.concatenate((player_state_space_low, ball_state_space_low)),
