@@ -6,8 +6,7 @@ With +1000 reward for ball contact and +ve reward for moving towards the ball wi
 Result
 Agent is not moving towards the ball efficiently
 
-Experiment 8: Training time
-Setup 1:
+Experiment 8:
 Field size: 10x10, Randomize player: True, Randomize ball: True
 Simulation Time: 45 secs
 Done: When player touches ball
@@ -15,3 +14,10 @@ Reward: reward_vel_to_ball
 Checkpoint 1: 
 The player kicked the ball but the episode did not terminate.
 Fixed the contact detection algorithm. Reduced Field size to 0.5x0.5. Episodes now terminate on contact with ball.
+
+Experiment 9: 
+Field size: 5x5, Randomize player: True, Randomize ball: True
+Simulation Time: 45 secs
+Done: When player touches ball
+Reward: +100 for touching the ball, -1 per timestep
+ 

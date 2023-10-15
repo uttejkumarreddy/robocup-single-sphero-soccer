@@ -51,18 +51,25 @@ class Player:
 				self.set_velocity(data, velocity)
 
 		def get_reward(self, data, ball):
-			player_position = self.get_position(data)[:2]
-			player_velocity = self.get_velocity(data)[:2]
-			ball_position = ball.get_position(data)[:2]
-			ball_velocity = ball.get_velocity(data)[:2]
-			goal_position = np.array(envProps.GOAL_HOME)
+			# player_position = self.get_position(data)[:2]
+			# player_velocity = self.get_velocity(data)[:2]
+			# ball_position = ball.get_position(data)[:2]
+			# ball_velocity = ball.get_velocity(data)[:2]
+			# goal_position = np.array(envProps.GOAL_HOME)
 
 			# 	vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
-			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
-			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
+			# player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
+			# reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
 			# ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			# reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector) * 10
 
-			return reward_vel_to_ball # + reward_vel_ball_to_goal
+			# return reward_vel_to_ball # + reward_vel_ball_to_goal
+
+			# Experiment 9
+			contacts = data.contact
+			for c in contacts:
+				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
+					return 100
+			return -1
