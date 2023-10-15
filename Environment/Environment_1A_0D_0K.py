@@ -124,10 +124,6 @@ class Environment_1A_0D_0K():
 				state_space = np.concatenate((player_state, ball_state))
 				return state_space
 
-		
-
-
-
 		def preprocess_sigmoid_actions(self, action):
 				# Actions are in the range [0, 1]
 				action_rotation, action_speed = action
@@ -138,9 +134,12 @@ class Environment_1A_0D_0K():
 		def preprocess_tanh_actions(self, action):
 				# Actions are in the range [-1, 1]
 				# Linear scaling: f(x) = 0.5 * (max - min) * x + 0.5 * (max + min)
+				min_speed, max_speed = envProps.BOLT_ENV_MIN_SPEED, envProps.BOLT_ENV_MAX_SPEED
+				min_rotation, max_rotation = envProps.BOLT_MIN_ROTATION, envProps.BOLT_MAX_ROTATION
+
 				action_rotation, action_speed = action
-				player_rotation = (0.5 * 359 * action_rotation) + (0.5 * 359)
-				player_speed = (0.5 * 20 * action_speed) + (0.5 * 20)
+				player_rotation = (0.5 * (max_rotation - min_rotation) * action_rotation) + (0.5 * (max_rotation + min_rotation))
+				player_speed = (0.5 * (max_speed - min_speed) * action_speed) + (0.5 * (max_speed + min_speed))
 				return player_rotation, player_speed
 
 		def step(self, data, action):

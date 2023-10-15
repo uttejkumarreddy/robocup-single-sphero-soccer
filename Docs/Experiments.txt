@@ -23,4 +23,10 @@ Reward: +100 for touching the ball, -1 per timestep
 Checkpoint 1:
 Field size: 10x10
 Increase Reward to +10000 to show significance as accumulated score over 45 secs ~-22000.
- 
+Checkpoint 2: 
+Field size: 3x3
+The player is not kicking the ball sufficiently in 10x10 environment. Reducing the field size.
+Checkpoint 3:
+Constant reward -1 is not incentivizing the ball enough to move. Bringing back reward_vel_to_ball.
+Checkpoint 4:
+Increase the Mujoco min bolt speed in Configurations from 0 to 10 for faster exploration. 
