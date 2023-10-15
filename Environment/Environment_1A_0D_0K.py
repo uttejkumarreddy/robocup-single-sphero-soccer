@@ -151,7 +151,7 @@ class Environment_1A_0D_0K():
 				done = False
 				contacts = data.contact
 				for contact in contacts:
-					if contact.geom1 == self.id_geom and contact.geom2 == ball.id_geom:
+					if contact.geom1 == self.player.id_geom and contact.geom2 == self.ball.id_geom:
 						done = True	
 				
 				info = {}

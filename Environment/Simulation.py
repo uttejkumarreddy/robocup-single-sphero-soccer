@@ -131,7 +131,7 @@ class Simulation:
 
 				self.observation = self.env.get_observation_space(data)
 				self.done = False
-				self.logger.write("Initial player position: {0}, ball position: {1}", self.env.player.get_position(data), self.env.ball.get_position(data))
+				self.logger.write("Initial player position: {0}, ball position: {1}".format(self.env.player.get_position(data), self.env.ball.get_position(data)))
 
 		def controller(self, model, data):
 				action = self.env.player.ai.choose_action(self.observation)
@@ -144,8 +144,6 @@ class Simulation:
 
 		def run(self, episode_count):
 				self.reset()
-
-				self.init_controller(self.model, self.data)
 				mj.set_mjcb_control(self.controller)
 
 				step_counter = 0
@@ -183,11 +181,12 @@ class Simulation:
 						glfw.swap_buffers(self.window)
 						glfw.poll_events()
 
-				self.logger.write("Final player position: {0}, ball position: {1}", self.env.player.get_position(self.data), self.env.ball.get_position(self.data))
-				self.logger.write("Episode count {0}, Score: {1}", episode_count, self.score)
+				self.logger.write("Final player position: {0}, ball position: {1}".format(self.env.player.get_position(self.data), self.env.ball.get_position(self.data)))
+				self.logger.write("Episode count {0}, Score: {1}".format(episode_count, self.score))
 
-		def save_models(self):
-				self.env.player.ai.save_models()
+				# Save models every 20 episodes
+				if episode_count % 20 == 0:
+					self.env.player.ai.save_models()				
 
 		def stop(self):
 				glfw.terminate()

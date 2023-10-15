@@ -36,5 +36,5 @@ class Logger:
 		self.current_log_name = 'log_' + str(self.current_log_number) + '.txt'
 		self.current_log = self.path_logs + self.current_log_name
 
-		self.write('')
+		self.write('Created new log file')
 		

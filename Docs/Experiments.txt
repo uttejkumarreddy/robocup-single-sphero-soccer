@@ -1,0 +1,14 @@
+Experiment 7: Training time ~18 hours
+Setup
+With random initial position for the player over the entire field and fixed ball position 
+With episode length of 5 minutes
+With +1000 reward for ball contact and +ve reward for moving towards the ball with high speed
+Result
+Agent is not moving towards the ball efficiently
+
+Experiment 8: Training time
+Setup 1:
+Field size: 10x10, Randomize player: True, Randomize ball: True
+Simulation Time: 45 secs
+Done: When player touches ball
+Reward: reward_vel_to_ball
