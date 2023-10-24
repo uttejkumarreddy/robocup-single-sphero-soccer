@@ -4,6 +4,7 @@ import math
 
 from AI.DDPG.Agent import Agent
 from Configurations import Environment as envProps
+from Configurations import DDPGHyperparameters as ddpgHP
 from Utilities.Logger import Logger
 
 class Player:
@@ -16,14 +17,16 @@ class Player:
 				self.id_joint = mj.mj_name2id(model, mj.mjtObj.mjOBJ_JOINT, self.name)
 
 				self.ai = Agent(
-						alpha=3e-4,
-						beta=3e-4,
-						input_dims=[observation_space.shape[0]],
-						tau=0.005,
-						batch_size=64,
-						layer1_size=400,
-						layer2_size=300,
+						alpha = ddpgHP.ALPHA,
+						beta = ddpgHP.BETA,
+						input_dims = [observation_space.shape[0]],
+						tau = ddpgHP.TAU,
+						gamma = ddpgHP.GAMMA,
 						n_actions=action_space.shape[0],
+						max_size = ddpgHP.BUFFER_SIZE,
+						layer1_size = ddpgHP.LAYER_1_SIZE,
+						layer2_size = ddpgHP.LAYER_2_SIZE,
+						batch_size = ddpgHP.BATCH_SIZE,
 				)
 				self.ai.load_models()
 

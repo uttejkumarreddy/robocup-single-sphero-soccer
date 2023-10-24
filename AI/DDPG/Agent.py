@@ -10,12 +10,11 @@ from AI.DDPG.CriticNetwork import CriticNetwork
 from AI.DDPG.ReplayBuffer import ReplayBuffer
 from AI.DDPG.OUActionNoise import OUActionNoise
 
+from Configurations import DDPGHyperparameters as ddpgHP
 from Utilities.Logger import Logger
 
 class Agent(object):
-	def __init__(self, alpha, beta, input_dims, tau, gamma = 0.99,
-							n_actions = 2, max_size = 1000000, 
-							layer1_size = 400, layer2_size = 300, batch_size = 64):
+	def __init__(self, alpha, beta, input_dims, tau, gamma, n_actions, max_size, layer1_size, layer2_size, batch_size):
 		self.logger = Logger()
 		self.logger.write("Initializing DDPG Agent with alpha {0} beta {1} input_dims {2} tau {3} gamma {4} n_actions {5} max_size {6} layer1_size {7} layer2_size {8} batch_size {9}".format(alpha, beta, input_dims, tau, gamma, n_actions, max_size, layer1_size, layer2_size, batch_size))
 		
