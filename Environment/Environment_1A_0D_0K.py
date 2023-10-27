@@ -16,7 +16,7 @@ class Environment_1A_0D_0K():
 
 				# Action Space - velocity (0-20), rotation (0-359)
 				self.action_space = spaces.Box(
-						low  = np.array([envProps.ENV_BOLT_MAX_SPEED, envProps.ENV_BOLT_MIN_ROTATION], dtype=np.int32),
+						low  = np.array([envProps.ENV_BOLT_MIN_SPEED, envProps.ENV_BOLT_MIN_ROTATION], dtype=np.int32),
 						high = np.array([envProps.ENV_BOLT_MAX_SPEED, envProps.ENV_BOLT_MAX_ROTATION], dtype=np.int32),
 				)
 
