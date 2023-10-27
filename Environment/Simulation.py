@@ -9,7 +9,7 @@ import numpy as np
 
 
 class Simulation:
-		def __init__(self, env, sim_length=45, frames_per_second=20):
+		def __init__(self, env, sim_length=45, frames_per_second=60):
 				self.env = env
 				self.logger = Logger()
 
@@ -130,15 +130,18 @@ class Simulation:
 						self.env.ball.set_position(data, random_position)
 
 				self.observation = self.env.get_observation_space(data)
+				self.nsteps = 0
 				self.done = False
+				self.score  = 0
+
 				self.logger.write("Initial player position: {0}, ball position: {1}".format(self.env.player.get_position(data), self.env.ball.get_position(data)))
 
 		def controller(self, model, data):
+			# Take a new action for every 4 steps
+			if self.nsteps % 4 == 0:
 				action = self.env.player.ai.choose_action(self.observation)
 				new_observation, reward, self.done, info = self.env.step(data, action)
-				self.env.player.ai.remember(
-						self.observation, action, reward, new_observation, self.done
-				)
+				self.env.player.ai.remember(self.observation, action, reward, new_observation, self.done)
 				self.score += reward
 				self.observation = new_observation
 
@@ -148,21 +151,19 @@ class Simulation:
 				self.reset()
 				mj.set_mjcb_control(self.controller)
 
-				step_counter = 0
-				self.score = 0
-
+				# The simulation runs in 60 fps
 				while not glfw.window_should_close(self.window):
 						time_prev = self.data.time
 
 						while self.data.time - time_prev < 1 / self.frames_per_second:
-								step_counter += 1
+								self.nsteps += 1
 								mj.mj_step(self.model, self.data)
 
 								if (self.done):
 									break
 
-						# Train networks for every 4 steps
-						if step_counter % 4 == 0:
+						# Train networks for every 4 new actions taken
+						if self.nsteps % 16 == 0:
 								self.env.player.ai.learn()
 
 						if self.done or (self.data.time > self.sim_length):

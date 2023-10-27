@@ -48,7 +48,8 @@ class Player:
 				data.qvel[self.id_joint * 6 : self.id_joint * 6 + 3] = vel
 
 		def set_heading_and_velocity(self, data, rotation, speed):
-				self.heading += rotation
+				# TODO: When applying this to the API, calculate the rotation from the current heading and the desired heading
+				self.heading = rotation 
 				direction = np.array([math.cos(self.heading), math.sin(self.heading), 0])
 				velocity = speed * direction
 				self.set_velocity(data, velocity)

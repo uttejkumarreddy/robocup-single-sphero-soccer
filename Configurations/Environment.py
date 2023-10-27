@@ -1,6 +1,6 @@
 # Observation Space Configuration
-FIELD_LENGTH = 3
-FIELD_WIDTH = 3
+FIELD_LENGTH = 24
+FIELD_WIDTH = 16.5
 
 RANDOMIZE_INITIAL_POSITIONS_PLAYERS = True
 RANDOMIZE_INITIAL_POSITIONS_BALL = True
@@ -8,26 +8,33 @@ RANDOMIZE_INITIAL_POSITIONS_BALL = True
 RADIUS_PLAYER = 0.365
 RADIUS_BALL = 0.215
 
-# Sphero Bolt Specs - API
+# Sphero Bolt and Soccer Ball Specs - API
 # Useful for scaling ENV values to API values
 BOLT_MIN_SPEED = 0
 BOLT_MAX_SPEED = 255
 BOLT_MIN_ROTATION = 0
 BOLT_MAX_ROTATION = 359
+BOLT_MASS = 200
+
+BALL_MIN_SPEED = 0
+BALL_MAX_SPEED = 20000 # derived from the momentum conservation equation
+BALL_MIN_ROTATION = 0
+BALL_MAX_ROTATION = 359
+BALL_MASS = 2.77
 
 # Sphero Bolt Specs - MuJoCo
-BOLT_ENV_MIN_SPEED = 10	# Min 0 unit/sec
-BOLT_ENV_MAX_SPEED = 20 # Max 20 unit/sec
-BOLT_ENV_MIN_ROTATION = 0
-BOLT_ENV_MAX_ROTATION = 359
-BOLT_ENV_MASS = 200
+ENV_BOLT_MIN_SPEED = 0	# Min 0 unit/sec
+ENV_BOLT_MAX_SPEED = 20 # Max 20 unit/sec
+ENV_BOLT_MIN_ROTATION = 0
+ENV_BOLT_MAX_ROTATION = 359
+ENV_BOLT_MASS = 200
 
-# Soccer Ball Specs -MuJoCo
-BALL_ENV_MIN_SPEED = 0
-BALL_ENV_MAX_SPEED = 1500 # derived from the momentum conservation equation
-BALL_ENV_MIN_ROTATION = 0
-BALL_ENV_MAX_ROTATION = 359
-BALL_ENV_MASS = 2.77
+# Soccer Ball Specs - MuJoCo
+ENV_BALL_MIN_SPEED = 0
+ENV_BALL_MAX_SPEED = 1500 # derived from the momentum conservation equation
+ENV_BALL_MIN_ROTATION = 0
+ENV_BALL_MAX_ROTATION = 359
+ENV_BALL_MASS = 2.77
 
 TEAM_HOME = "HOME_TEAM"  # blue players
 TEAM_AWAY = "AWAY_TEAM"  # red players
