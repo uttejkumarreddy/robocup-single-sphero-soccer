@@ -8,7 +8,7 @@ import os
 
 class Environment_1A_0D_0K():
 		def __init__(self):
-				self.environment = "1A_0D_0K/extrasmall.xml"
+				self.environment = "1A_0D_0K/XS.xml"
 				self.set_env_path(self.environment)
 
 				self.home_team_size = 1
