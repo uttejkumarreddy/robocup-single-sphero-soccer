@@ -8,11 +8,10 @@ import os
 
 class Environment_1A_0D_0K():
 		def __init__(self):
-				self.environment = "1A_0D_0K/XS.xml"
-				self.set_env_path(self.environment)
+				SIZE = os.environ['SOCCER_DIMS']
 
-				self.home_team_size = 1
-				self.away_team_size = 0
+				self.environment = '1A_0D_0K/{0}.xml'.format(SIZE)
+				self.set_env_path(self.environment)
 
 				# Action Space - velocity (0-20), rotation (0-359)
 				self.action_space = spaces.Box(
@@ -21,24 +20,26 @@ class Environment_1A_0D_0K():
 				)
 
 				# Observation Space
+				FIELD_LENGTH, FIELD_WIDTH = envProps.OBSERVATION_SPACE[SIZE]['FIELD_DIMENSIONS']
+
 				observation_space_low = np.array([
-					-envProps.FIELD_LENGTH, # agent x position
-					-envProps.FIELD_WIDTH, # agent y position
+					-FIELD_LENGTH, # agent x position
+					-FIELD_WIDTH, # agent y position
 					envProps.ENV_BOLT_MIN_SPEED, # agent velocity
 					envProps.ENV_BOLT_MIN_ROTATION, # agent rotation
-					-envProps.FIELD_LENGTH, # ball x position
-					-envProps.FIELD_WIDTH, # ball y position
+					-FIELD_LENGTH, # ball x position
+					-FIELD_WIDTH, # ball y position
 					envProps.ENV_BALL_MIN_SPEED, # ball velocity
 					envProps.ENV_BALL_MIN_ROTATION, # ball rotation
 				], dtype=np.float32,)
 
 				observation_space_high = np.array([
-					envProps.FIELD_LENGTH, # agent x position
-					envProps.FIELD_WIDTH, # agent y position
+					FIELD_LENGTH, # agent x position
+					FIELD_WIDTH, # agent y position
 					envProps.ENV_BOLT_MAX_SPEED, # agent velocity
 					envProps.ENV_BOLT_MAX_ROTATION, # agent rotation
-					envProps.FIELD_LENGTH, # ball x position
-					envProps.FIELD_WIDTH, # ball y position
+					FIELD_LENGTH, # ball x position
+					FIELD_WIDTH, # ball y position
 					envProps.ENV_BALL_MAX_SPEED, # ball velocity
 					envProps.ENV_BALL_MAX_ROTATION, # ball rotation
 				], dtype=np.float32,)
@@ -73,12 +74,6 @@ class Environment_1A_0D_0K():
 
 				# Ball
 				self.ball = Ball(model, envProps.NAME_BALL)
-
-		def get_home_team_size(self):
-				return self.home_team_size
-
-		def get_away_team_size(self):
-				return self.away_team_size
 			
 		def get_speed_from_velocity(self, velocity):
 				x_vel, y_vel = velocity[0], velocity[1]

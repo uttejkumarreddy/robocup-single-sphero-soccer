@@ -18,7 +18,7 @@ LAYER_2_SIZE = 128		# fc2_dims
 BATCH_SIZE = 64			# Batch size
 
 # Checkpoint Directories
-DDPG_CHKPT_DIR = "AI/checkpoints/DDPG/"
+DDPG_CHKPT_DIR = "Checkpoints/DDPG/"
 
 class OUActionNoise(object):
 	def __init__(self, mu, sigma = 0.15, theta = 0.2, dt = 1e-2, x0 = None):

@@ -1,6 +1,26 @@
-# Observation Space Configuration
-FIELD_LENGTH = 12
-FIELD_WIDTH = 8.25
+# Observation Space
+OBSERVATION_SPACE = {
+    'XS': {
+        'FIELD_DIMENSIONS': [6, 4.125],
+        'GOAL_HOME': [-3, -2.0625],
+        'GOAL_AWAY': [3, 2.0625],
+    },
+    'S': {
+        'FIELD_DIMENSIONS': [12, 8.25],
+        'GOAL_HOME': [-6, -4.125],
+        'GOAL_AWAY': [6, 4.125],
+    },
+    'M': {
+        'FIELD_DIMENSIONS': [24, 16.5],
+        'GOAL_HOME': [-12, -8.25],
+        'GOAL_AWAY': [12, 8.25],
+    },
+    'L': {
+        'FIELD_DIMENSIONS': [48, 33],
+        'GOAL_HOME': [-24, -16.5],
+        'GOAL_AWAY': [24, 16.5],
+    },
+}
 
 RANDOMIZE_INITIAL_POSITIONS_PLAYERS = True
 RANDOMIZE_INITIAL_POSITIONS_BALL = True
@@ -41,8 +61,4 @@ TEAM_AWAY = "AWAY_TEAM"  # red players
 NAME_BALL = "ball"
 
 ENV_1A_0D_0K = "Environment_1A_0D_0K"
-
-# Goal Positions
-GOAL_HOME = [-FIELD_LENGTH / 2, -FIELD_WIDTH / 2]
-GOAL_AWAY = [FIELD_LENGTH / 2, FIELD_WIDTH / 2]
 

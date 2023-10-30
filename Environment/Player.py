@@ -1,6 +1,7 @@
 import mujoco as mj
 import numpy as np
 import math
+import os
 
 from AI import DDPG
 from AI.DDPG import ALPHA, BETA, TAU, GAMMA, BUFFER_SIZE, LAYER_1_SIZE, LAYER_2_SIZE, BATCH_SIZE
@@ -62,13 +63,12 @@ class Player:
 			ball_position = ball.get_position(data)[:2]
 			ball_velocity = ball.get_velocity(data)[:2]
 
-			goal_position = np.array(envProps.GOAL_HOME)
-
 			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
 			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
 			reward_vel_to_ball = -np.dot(player_velocity_norm, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
+			# goal_position = ???
 			# ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			# reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector) * 10
 

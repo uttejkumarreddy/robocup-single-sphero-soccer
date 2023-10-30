@@ -113,18 +113,20 @@ class Simulation:
 				self.init_controller(self.model, self.data)
 
 		def init_controller(self, model, data):
+				FIELD_LENGTH, FIELD_WIDTH = envProps.OBSERVATION_SPACE[os.environ['SOCCER_DIMS']]['FIELD_DIMENSIONS']
+
 				if envProps.RANDOMIZE_INITIAL_POSITIONS_PLAYERS == True:
 						random_position = (
-								np.random.uniform(-envProps.FIELD_LENGTH, envProps.FIELD_LENGTH),
-								np.random.uniform(-envProps.FIELD_WIDTH, envProps.FIELD_WIDTH),
+								np.random.uniform(-FIELD_LENGTH, FIELD_LENGTH),
+								np.random.uniform(-FIELD_WIDTH, FIELD_WIDTH),
 								envProps.RADIUS_PLAYER,
 						)
 						self.env.player.set_position(data, random_position)
 
 				if envProps.RANDOMIZE_INITIAL_POSITIONS_BALL == True:
 						random_position = (
-								np.random.uniform(-envProps.FIELD_LENGTH, envProps.FIELD_LENGTH),
-								np.random.uniform(-envProps.FIELD_WIDTH, envProps.FIELD_WIDTH),
+								np.random.uniform(-FIELD_LENGTH, FIELD_LENGTH),
+								np.random.uniform(-FIELD_WIDTH, FIELD_WIDTH),
 								envProps.RADIUS_BALL,
 						)
 						self.env.ball.set_position(data, random_position)
