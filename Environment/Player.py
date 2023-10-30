@@ -2,9 +2,9 @@ import mujoco as mj
 import numpy as np
 import math
 
-from AI.DDPG.Agent import Agent
+from AI import DDPG
+from AI.DDPG import ALPHA, BETA, TAU, GAMMA, BUFFER_SIZE, LAYER_1_SIZE, LAYER_2_SIZE, BATCH_SIZE
 from Configurations import Environment as envProps
-from Configurations import DDPGHyperparameters as ddpgHP
 from Utilities.Logger import Logger
 
 class Player:
@@ -16,17 +16,17 @@ class Player:
 				self.id_geom = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, self.name)
 				self.id_joint = mj.mj_name2id(model, mj.mjtObj.mjOBJ_JOINT, self.name)
 
-				self.ai = Agent(
-						alpha = ddpgHP.ALPHA,
-						beta = ddpgHP.BETA,
+				self.ai = DDPG.Agent(
+						alpha = ALPHA,
+						beta = BETA,
 						input_dims = [observation_space.shape[0]],
-						tau = ddpgHP.TAU,
-						gamma = ddpgHP.GAMMA,
+						tau = TAU,
+						gamma = GAMMA,
 						n_actions=action_space.shape[0],
-						max_size = ddpgHP.BUFFER_SIZE,
-						layer1_size = ddpgHP.LAYER_1_SIZE,
-						layer2_size = ddpgHP.LAYER_2_SIZE,
-						batch_size = ddpgHP.BATCH_SIZE,
+						max_size = BUFFER_SIZE,
+						layer1_size = LAYER_1_SIZE,
+						layer2_size = LAYER_2_SIZE,
+						batch_size = BATCH_SIZE,
 				)
 				self.ai.load_models()
 

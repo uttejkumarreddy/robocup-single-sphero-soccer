@@ -46,5 +46,3 @@ ENV_1A_0D_0K = "Environment_1A_0D_0K"
 GOAL_HOME = [-FIELD_LENGTH / 2, -FIELD_WIDTH / 2]
 GOAL_AWAY = [FIELD_LENGTH / 2, FIELD_WIDTH / 2]
 
-# Checkpoint Directories
-DDPG_CHKPT_DIR = "AI/DDPG/saved_models/"
