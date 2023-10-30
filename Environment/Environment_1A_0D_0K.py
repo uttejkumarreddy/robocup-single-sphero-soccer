@@ -1,4 +1,4 @@
-from Configurations import Environment as envProps
+from Configurations import Environment as p
 from Environment.Player import Player
 from Environment.Ball import Ball
 from Utilities.Logger import Logger
@@ -13,35 +13,45 @@ class Environment_1A_0D_0K():
 				self.environment = '1A_0D_0K/{0}.xml'.format(SIZE)
 				self.set_env_path(self.environment)
 
-				# Action Space - velocity (0-20), rotation (0-359)
+				# Action Space
 				self.action_space = spaces.Box(
-						low  = np.array([envProps.ENV_BOLT_MIN_SPEED, envProps.ENV_BOLT_MIN_ROTATION], dtype=np.int32),
-						high = np.array([envProps.ENV_BOLT_MAX_SPEED, envProps.ENV_BOLT_MAX_ROTATION], dtype=np.int32),
+						low  = np.array([p.ENV_BOLT_MIN_SPEED, p.ENV_BOLT_MIN_ROTATION], dtype=np.float32),
+						high = np.array([p.ENV_BOLT_MAX_SPEED, p.ENV_BOLT_MAX_ROTATION], dtype=np.float32),
 				)
 
 				# Observation Space
-				FIELD_LENGTH, FIELD_WIDTH = envProps.OBSERVATION_SPACE[SIZE]['FIELD_DIMENSIONS']
+				FIELD_LENGTH, FIELD_WIDTH = p.OBSERVATION_SPACE[SIZE]['FIELD_DIMENSIONS']
 
 				observation_space_low = np.array([
-					-FIELD_LENGTH, # agent x position
-					-FIELD_WIDTH, # agent y position
-					envProps.ENV_BOLT_MIN_SPEED, # agent velocity
-					envProps.ENV_BOLT_MIN_ROTATION, # agent rotation
-					-FIELD_LENGTH, # ball x position
-					-FIELD_WIDTH, # ball y position
-					envProps.ENV_BALL_MIN_SPEED, # ball velocity
-					envProps.ENV_BALL_MIN_ROTATION, # ball rotation
+					-FIELD_LENGTH, 											# agent_pos_x
+					-FIELD_WIDTH, 											# agent_pos_y
+					p.ENV_BOLT_MIN_SPEED, 									# agent_vel_x
+					p.ENV_BOLT_MIN_SPEED, 									# agent_vel_y
+					p.ENV_BOLT_MIN_ROTATION,								# agent_heading
+					-FIELD_LENGTH, 											# ball_pos_x
+					-FIELD_WIDTH, 											# ball_pos_y
+					p.ENV_BALL_MIN_SPEED,  									# ball_vel_x
+					p.ENV_BALL_MIN_SPEED,									# ball_vel_y
+					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
+					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
+					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
+					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
 				], dtype=np.float32,)
 
 				observation_space_high = np.array([
-					FIELD_LENGTH, # agent x position
-					FIELD_WIDTH, # agent y position
-					envProps.ENV_BOLT_MAX_SPEED, # agent velocity
-					envProps.ENV_BOLT_MAX_ROTATION, # agent rotation
-					FIELD_LENGTH, # ball x position
-					FIELD_WIDTH, # ball y position
-					envProps.ENV_BALL_MAX_SPEED, # ball velocity
-					envProps.ENV_BALL_MAX_ROTATION, # ball rotation
+					FIELD_LENGTH, 											# agent_pos_x
+					FIELD_WIDTH, 											# agent_pos_y
+					p.ENV_BOLT_MAX_SPEED, 									# agent_vel_x
+					p.ENV_BOLT_MAX_SPEED, 									# agent_vel_y
+					p.ENV_BOLT_MAX_ROTATION,								# agent_heading
+					FIELD_LENGTH, 											# ball_pos_x
+					FIELD_WIDTH, 											# ball_pos_y
+					p.ENV_BALL_MAX_SPEED,  									# ball_vel_x
+					p.ENV_BALL_MAX_SPEED,									# ball_vel_y
+					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
+					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
+					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
+					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
 				], dtype=np.float32,)
 
 				self.observation_space = spaces.Box(
@@ -66,14 +76,14 @@ class Environment_1A_0D_0K():
 				# Players - Single Player
 				self.player = Player(
 						model,
-						envProps.TEAM_HOME,
+						p.TEAM_HOME,
 						"home_player_1",
 						self.observation_space,
 						self.action_space,
 				)
 
 				# Ball
-				self.ball = Ball(model, envProps.NAME_BALL)
+				self.ball = Ball(model, p.BALL)
 			
 		def get_speed_from_velocity(self, velocity):
 				x_vel, y_vel = velocity[0], velocity[1]
@@ -114,8 +124,8 @@ class Environment_1A_0D_0K():
 		def preprocess_tanh_actions(self, action):
 				# Actions are in the range [-1, 1]
 				action_speed, action_rotation = action
-				player_speed = self.scale_linear(action_speed, envProps.ENV_BOLT_MIN_SPEED, envProps.ENV_BOLT_MAX_SPEED) # Scale speed to [0-20]
-				player_rotation = self.scale_linear(action_rotation, envProps.ENV_BOLT_MIN_ROTATION, envProps.ENV_BOLT_MAX_ROTATION) # Scale rotation to [0-359]
+				player_speed = self.scale_linear(action_speed, p.ENV_BOLT_MIN_SPEED, p.ENV_BOLT_MAX_SPEED) # Scale speed to [0-20]
+				player_rotation = self.scale_linear(action_rotation, p.ENV_BOLT_MIN_ROTATION, p.ENV_BOLT_MAX_ROTATION) # Scale rotation to [0-359]
 				return player_speed, player_rotation
 
 		def step(self, data, action):
