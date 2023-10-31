@@ -139,6 +139,7 @@ class Simulation:
 				self.logger.write("Initial player position: {0}, ball position: {1}".format(self.env.player.get_position(data), self.env.ball.get_position(data)))
 
 		def controller(self, model, data):
+			if self.nsteps % 4 == 0:
 				action = self.env.player.ai.choose_action(self.observation)
 				new_observation, reward, self.done, info = self.env.step(data, action)
 				self.env.player.ai.remember(self.observation, action, reward, new_observation, self.done)
@@ -158,8 +159,6 @@ class Simulation:
 						while self.data.time - time_prev < 1 / self.frames_per_second:
 								self.nsteps += 1
 								mj.mj_step(self.model, self.data)
-
-								self.env.player.ai.learn()
 
 						if self.done or (self.data.time > self.sim_length):
 								break
@@ -182,12 +181,11 @@ class Simulation:
 						glfw.swap_buffers(self.window)
 						glfw.poll_events()
 
+				self.env.player.ai.learn()
+				self.env.player.ai.save_models()
+
 				self.logger.write("Final player position: {0}, ball position: {1}".format(self.env.player.get_position(self.data), self.env.ball.get_position(self.data)))
 				self.logger.write("END: Episode count {0}, Episode length: {1}, Score: {2}".format(episode_count, self.data.time ,self.score))
-
-				# Save models every 20 episodes
-				if episode_count % 20 == 0:
-					self.env.player.ai.save_models()				
 
 		def stop(self):
 				glfw.terminate()

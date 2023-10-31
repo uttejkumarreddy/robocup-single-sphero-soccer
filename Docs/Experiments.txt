@@ -41,3 +41,9 @@ reward_vel_to_ball is now assigned '-' sign as with '+' sign the player seems to
 reward_ball_kicked changed to +100.
 Conclusion:
 Agent is still not decisively hitting the ball
+
+Experiment 11: ~10 hours
+Changelog:
+Action space, observation space
+Result:
+The agent keeps spinning in place. It did not learn to move towards the ball.

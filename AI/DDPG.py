@@ -10,11 +10,11 @@ from Utilities.Logger import Logger
 
 ALPHA = 0.0001		    # Actor learning rate
 BETA = 0.001			# Critic learning rate
-TAU = 0.0001			# Decay coefficient
+TAU = 0.001			# Decay coefficient
 GAMMA = 0.99			# Discounted factor for reward computation
-BUFFER_SIZE = 100000	# Replay buffer max size
-LAYER_1_SIZE = 128		# fc1_dims
-LAYER_2_SIZE = 128		# fc2_dims
+BUFFER_SIZE = 1000000	# Replay buffer max size
+LAYER_1_SIZE = 400		# fc1_dims
+LAYER_2_SIZE = 300		# fc2_dims
 BATCH_SIZE = 64			# Batch size
 
 # Checkpoint Directories
@@ -114,7 +114,7 @@ class ActorNetwork(nn.Module):
 
 		self.optimizer = optim.Adam(self.parameters(), lr=alpha)
 
-		self.device = T.device("cuda:0" if T.cuda.is_available() else "cpu")
+		self.device = T.device("cuda" if T.cuda.is_available() else "cpu")
 		self.to(self.device)
 
 	def forward(self, state):
@@ -181,7 +181,7 @@ class CriticNetwork(nn.Module):
 
 		self.optimizer = optim.Adam(self.parameters(), lr=beta)
 
-		self.device = T.device("cuda:0" if T.cuda.is_available() else "cpu")
+		self.device = T.device("cuda" if T.cuda.is_available() else "cpu")
 		self.to(self.device)
 
 	def forward(self, state, action):
