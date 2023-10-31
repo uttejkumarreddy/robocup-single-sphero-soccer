@@ -8,9 +8,9 @@ import os
 
 class Environment_1A_0D_0K():
 		def __init__(self):
-				SIZE = os.environ['SOCCER_DIMS']
+				self.SIZE = os.environ['SOCCER_DIMS']
 
-				self.environment = '1A_0D_0K/{0}.xml'.format(SIZE)
+				self.environment = '1A_0D_0K/{0}.xml'.format(self.SIZE)
 				self.set_env_path(self.environment)
 
 				# Action Space
@@ -20,7 +20,7 @@ class Environment_1A_0D_0K():
 				)
 
 				# Observation Space
-				FIELD_LENGTH, FIELD_WIDTH = p.OBSERVATION_SPACE[SIZE]['FIELD_DIMENSIONS']
+				FIELD_LENGTH, FIELD_WIDTH = p.OBSERVATION_SPACE[self.SIZE]['FIELD_DIMENSIONS']
 
 				observation_space_low = np.array([
 					-FIELD_LENGTH, 											# agent_pos_x
@@ -32,10 +32,10 @@ class Environment_1A_0D_0K():
 					-FIELD_WIDTH, 											# ball_pos_y
 					p.ENV_BALL_MIN_SPEED,  									# ball_vel_x
 					p.ENV_BALL_MIN_SPEED,									# ball_vel_y
-					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
-					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
-					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
-					-abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
+					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
+					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
+					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
+					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
 				], dtype=np.float32,)
 
 				observation_space_high = np.array([
@@ -48,10 +48,10 @@ class Environment_1A_0D_0K():
 					FIELD_WIDTH, 											# ball_pos_y
 					p.ENV_BALL_MAX_SPEED,  									# ball_vel_x
 					p.ENV_BALL_MAX_SPEED,									# ball_vel_y
-					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
-					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
-					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
-					abs(p.OBSERVATION_SPACE[SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
+					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
+					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
+					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
+					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_bottom_y
 				], dtype=np.float32,)
 
 				self.observation_space = spaces.Box(
@@ -96,26 +96,20 @@ class Environment_1A_0D_0K():
 				return [rotation]
 
 		def get_observation_space(self, data):
+				# agent_pos_x, agent_pos_y, agent_vel_x, agent_vel_y, agent_heading, ball_pos_x, ball_pos_y, ball_vel_x, ball_vel_y, goal_top_x, goal_top_y, goal_bottom_x, goal_bottom_y
 				player_position = self.player.get_position(data)
 				player_velocity = self.player.get_velocity(data)[:2]
-				player_speed, player_rotation = self.get_speed_from_velocity(player_velocity), self.get_heading_from_velocity(player_velocity)
+				player_rotation = [self.player.heading]
 
 				ball_position = self.ball.get_position(data)
 				ball_velocity = self.ball.get_velocity(data)[:2]
-				ball_speed, ball_rotation = self.get_speed_from_velocity(ball_velocity), self.get_heading_from_velocity(ball_velocity)
 
-				player_state = np.concatenate((player_position[:2], player_speed, player_rotation))
-				ball_state = np.concatenate((ball_position[:2], ball_speed, ball_rotation))
+				state_player = np.concatenate((player_position[:2], player_velocity, player_rotation))
+				state_ball = np.concatenate((ball_position[:2], ball_velocity))
+				state_goal = np.concatenate((p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'], p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_BOTTOM']))
 
-				state_space = np.concatenate((player_state, ball_state))
+				state_space = np.concatenate((state_player, state_ball, state_goal))
 				return state_space
-
-		def preprocess_sigmoid_actions(self, action):
-				# Actions are in the range [0, 1]
-				action_speed, action_rotation = action
-				player_rotation = action_rotation * 359
-				player_speed = action_speed * 20
-				return player_speed, player_rotation
 
 		def scale_linear(self, x, min, max):
 			# Linear scaling: f(x) = 0.5 * (max - min) * x + 0.5 * (max + min)
@@ -124,8 +118,8 @@ class Environment_1A_0D_0K():
 		def preprocess_tanh_actions(self, action):
 				# Actions are in the range [-1, 1]
 				action_speed, action_rotation = action
-				player_speed = self.scale_linear(action_speed, p.ENV_BOLT_MIN_SPEED, p.ENV_BOLT_MAX_SPEED) # Scale speed to [0-20]
-				player_rotation = self.scale_linear(action_rotation, p.ENV_BOLT_MIN_ROTATION, p.ENV_BOLT_MAX_ROTATION) # Scale rotation to [0-359]
+				player_speed = self.scale_linear(action_speed, p.ENV_BOLT_MIN_SPEED, p.ENV_BOLT_MAX_SPEED)
+				player_rotation = self.scale_linear(action_rotation, p.ENV_BOLT_MIN_ROTATION, p.ENV_BOLT_MAX_ROTATION)
 				return player_speed, player_rotation
 
 		def step(self, data, action):

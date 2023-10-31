@@ -50,7 +50,7 @@ class Player:
 
 		def set_heading_and_velocity(self, data, rotation, speed):
 				# TODO: When applying this to the API, calculate the rotation from the current heading and the desired heading
-				self.heading = rotation 
+				self.heading += rotation 
 				direction = np.array([math.cos(self.heading), math.sin(self.heading), 0])
 				velocity = speed * direction
 				self.set_velocity(data, velocity)

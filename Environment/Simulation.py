@@ -139,8 +139,6 @@ class Simulation:
 				self.logger.write("Initial player position: {0}, ball position: {1}".format(self.env.player.get_position(data), self.env.ball.get_position(data)))
 
 		def controller(self, model, data):
-			# Take a new action for every 4 steps
-			if self.nsteps % 4 == 0:
 				action = self.env.player.ai.choose_action(self.observation)
 				new_observation, reward, self.done, info = self.env.step(data, action)
 				self.env.player.ai.remember(self.observation, action, reward, new_observation, self.done)
@@ -161,11 +159,6 @@ class Simulation:
 								self.nsteps += 1
 								mj.mj_step(self.model, self.data)
 
-								if (self.done):
-									break
-
-						# Train networks for every 4 new actions taken
-						if self.nsteps % 16 == 0:
 								self.env.player.ai.learn()
 
 						if self.done or (self.data.time > self.sim_length):
