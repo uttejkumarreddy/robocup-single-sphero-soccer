@@ -17,6 +17,13 @@ class Player:
 				self.id_geom = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, self.name)
 				self.id_joint = mj.mj_name2id(model, mj.mjtObj.mjOBJ_JOINT, self.name)
 
+				self.boundary_geoms = [
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_N'),
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_S'),
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_E'),
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_W'),
+				]
+
 				self.ai = DDPG.Agent(
 						alpha = ALPHA,
 						beta = BETA,
@@ -50,7 +57,7 @@ class Player:
 
 		def set_heading_and_velocity(self, data, rotation, speed):
 				# TODO: When applying this to the API, calculate the rotation from the current heading and the desired heading
-				self.heading += rotation 
+				self.heading = rotation # Sphero bolt heading is relative to the user and not the robot 
 				direction = np.array([math.cos(self.heading), math.sin(self.heading), 0])
 				velocity = speed * direction
 				self.set_velocity(data, velocity)
@@ -58,26 +65,30 @@ class Player:
 		def get_reward(self, data, ball):
 			player_position = self.get_position(data)[:2]
 			player_velocity = self.get_velocity(data)[:2]
-			player_velocity_norm = player_velocity / np.linalg.norm(player_velocity)
 
 			ball_position = ball.get_position(data)[:2]
 			ball_velocity = ball.get_velocity(data)[:2]
 
-			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
-			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
-			reward_vel_to_ball = -np.dot(player_velocity_norm, player_to_ball_unit_vector)
+			reward = 0.001 * (1 / 1 + (np.linalg.norm(player_position - ball_position)))
 
+			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
+			#player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
+			#reward_vel_to_ball = -np.dot(player_velocity_norm, player_to_ball_unit_vector)
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
 			# goal_position = ???
 			# ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			# reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector) * 10
-
 			# return reward_vel_to_ball # + reward_vel_ball_to_goal
 
+			# Contact rewards
 			contacts = data.contact
-			reward_ball_kicked = 0
 			for c in contacts:
 				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
-					reward_ball_kicked = 100
+					reward += 100
+				# If the player is touching the boundaries (the name of the boundaries contains 'boundary_' in it), give it a negative reward
+				elif c.geom1 in self.boundary_geoms and c.geom2 == self.id_geom:
+					reward -= 100
+				elif c.geom1 == self.id_geom and c.geom2 in self.boundary_geoms:
+					reward -= 100
 
-			return reward_vel_to_ball + reward_ball_kicked
+			return reward

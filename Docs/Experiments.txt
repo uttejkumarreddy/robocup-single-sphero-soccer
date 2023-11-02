@@ -31,7 +31,7 @@ Constant reward -1 is not incentivizing the ball enough to move. Bringing back r
 Checkpoint 4:
 Increase the Mujoco min bolt speed in Configurations from 0 to 10 for faster exploration.
 Fix velocity range in observation space from [0,255] to [0,20] as calculated observation space returns velocities in that range.
-Conclusion:
+Observation:
 The player is still moving like its actively avoiding the ball. The reward function needs to be verified.
 
 Experiment 10:
@@ -39,11 +39,24 @@ Changelog:
 reward_vel_to_ball now calculates on normalized player_velocity vector.
 reward_vel_to_ball is now assigned '-' sign as with '+' sign the player seems to actively avoid kicking the ball.
 reward_ball_kicked changed to +100.
-Conclusion:
+Observation:
 Agent is still not decisively hitting the ball
 
 Experiment 11: ~10 hours
 Changelog:
 Action space, observation space
-Result:
+Observation:
 The agent keeps spinning in place. It did not learn to move towards the ball.
+
+Experiment 12: ~40 hours
+Changelog:
+Sphero Bolt heading is made absolute to its origin.
+Reward simplified to moving closer to ball only. Negative reward when agent touches boundaries.
+Observation:
+Agent touches and sticks to boundaries.
+
+Experiment 13:
+Changelog:
+To address and simplify reward structure, reward is given when ball is touched. There is no reward otherwise.
+To help with this sparse reward, DDPG + HER is implemented.
+Observation: 

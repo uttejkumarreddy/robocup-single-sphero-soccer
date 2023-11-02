@@ -15,7 +15,7 @@ GAMMA = 0.99			# Discounted factor for reward computation
 BUFFER_SIZE = 1000000	# Replay buffer max size
 LAYER_1_SIZE = 400		# fc1_dims
 LAYER_2_SIZE = 300		# fc2_dims
-BATCH_SIZE = 64			# Batch size
+BATCH_SIZE = 128			# Batch size
 
 # Checkpoint Directories
 DDPG_CHKPT_DIR = "Checkpoints/DDPG/"
@@ -238,6 +238,8 @@ class Agent(object):
 		self.memory.store_transition(state, action, reward, new_state, done)
 
 	def learn(self):
+		self.logger.write("Begin learning")
+
 		if self.memory.mem_cntr < self.batch_size:
 			return
 

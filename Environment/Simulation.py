@@ -139,7 +139,7 @@ class Simulation:
 				self.logger.write("Initial player position: {0}, ball position: {1}".format(self.env.player.get_position(data), self.env.ball.get_position(data)))
 
 		def controller(self, model, data):
-			if self.nsteps % 4 == 0:
+			if self.nsteps % 3 == 0:
 				action = self.env.player.ai.choose_action(self.observation)
 				new_observation, reward, self.done, info = self.env.step(data, action)
 				self.env.player.ai.remember(self.observation, action, reward, new_observation, self.done)
