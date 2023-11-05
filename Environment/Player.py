@@ -63,32 +63,12 @@ class Player:
 				self.set_velocity(data, velocity)
 
 		def get_reward(self, data, ball):
-			player_position = self.get_position(data)[:2]
-			player_velocity = self.get_velocity(data)[:2]
+			reward = None
 
-			ball_position = ball.get_position(data)[:2]
-			ball_velocity = ball.get_velocity(data)[:2]
-
-			reward = 0.001 * (1 / 1 + (np.linalg.norm(player_position - ball_position)))
-
-			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
-			#player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
-			#reward_vel_to_ball = -np.dot(player_velocity_norm, player_to_ball_unit_vector)
-			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
-			# goal_position = ???
-			# ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
-			# reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector) * 10
-			# return reward_vel_to_ball # + reward_vel_ball_to_goal
-
-			# Contact rewards
 			contacts = data.contact
 			for c in contacts:
-				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
-					reward += 100
-				# If the player is touching the boundaries (the name of the boundaries contains 'boundary_' in it), give it a negative reward
-				elif c.geom1 in self.boundary_geoms and c.geom2 == self.id_geom:
-					reward -= 100
-				elif c.geom1 == self.id_geom and c.geom2 in self.boundary_geoms:
-					reward -= 100
+				if c.geom1 == ball.id_geom and c.geom2 == self.id_geom \
+					or c.geom1 == self.id_geom and c.geom2 == ball.id_geom:
+					reward = 1
 
 			return reward
