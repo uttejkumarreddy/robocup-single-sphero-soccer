@@ -78,7 +78,7 @@ class Player:
 			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
-			goal_position = (-5.7375, 0)
+			goal_position = (5.7375, 0)
 			ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector)
 

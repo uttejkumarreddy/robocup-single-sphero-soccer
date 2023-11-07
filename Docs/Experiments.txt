@@ -71,3 +71,10 @@ Dense reward: (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_bal
 Rewards the agent for scoring the ball in opponent's goal and penalises agent when scored in own goal.
 When ball hits the goal and reflects back, the agent might learn that hitting a goal inadverently gives a negatives reward.
 So, keep done=True on goal score and terminate the episode.
+Observation:
+Mistakenly directed towards '-5' instead of '+5'. Retraining with correct parameters in next experiment.
+
+Experiment 15:
+Changelog:
+Directed towards goal (+5.7325, 0)
+Observation:
