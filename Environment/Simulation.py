@@ -151,6 +151,10 @@ class Simulation:
 				self.reset()
 
 				start_time = time.time()
+				episode_actor_loss = 0
+				episode_critic_loss = 0
+				n_trains = 0
+
 				# The simulation runs in 60 fps
 				while not glfw.window_should_close(self.window):
 						time_prev = self.data.time
@@ -162,7 +166,10 @@ class Simulation:
 
 						if (self.env.player.ai.memory.mem_cntr % self.env.player.ai.batch_size == 0 \
 							and self.env.player.ai.memory.mem_cntr > 1000):
-							self.env.player.ai.learn()
+							n_trains += 1
+							actor_loss, critic_loss = self.env.player.ai.learn()
+							episode_actor_loss += actor_loss
+							episode_critic_loss += critic_loss
 
 						if self.data.time > self.sim_length:
 							break
@@ -184,21 +191,10 @@ class Simulation:
 
 						glfw.swap_buffers(self.window)
 						glfw.poll_events()
-
-				# episode_actor_loss = 0
-				# episode_critic_loss = 0
-				# for i in range(40):
-				# 	actor_loss, critic_loss = 
-				# 	episode_actor_loss += actor_loss
-				# 	episode_critic_loss += critic_loss
-
-				# episode_actor_loss /= 40
-				# episode_critic_loss /= 40
-				# print("Actor loss: {0}, Critic loss: {1}".format(episode_actor_loss, episode_critic_loss))
 				
 				self.env.player.ai.save_models()
 
-				# self.logger.write("Actor loss: {0}, Critic loss: {1}".format(episode_actor_loss, episode_critic_loss))
+				self.logger.write("Episode count {0}, Actor loss: {0}, Critic loss: {1}".format(episode_count, episode_actor_loss, episode_critic_loss))
 				self.logger.write("Final player position: {0}, ball position: {1}".format(self.env.player.get_position(self.data), self.env.ball.get_position(self.data)))
 				self.logger.write("END: Episode count {0}, Episode length: {1}, Score: {2}".format(episode_count, self.data.time ,self.score))
 
