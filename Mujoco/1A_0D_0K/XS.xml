@@ -15,10 +15,12 @@
 			<geom name="boundary_W" type="box" size="4.125 0.1 1" pos="6 0 0" rgba="0 0 0 1" euler="0 0 90" mass="1000" />
 			<geom name="boundary_E" type="box" size="4.125 0.1 1" pos="-6 0 0" rgba="0 0 0 1" euler="0 0 90" mass="1000" />
 
+			<!-- Red goal: Red protects, Blue attacks -->
 			<geom name="goalE_W" type="box" size="0.625 0.1 0.4" pos="5.85 0 0" rgba="1 0 0 1" euler="0 0 90" />
 			<geom name="goalE_S" type="box" size="0.1125 0.1 0.4" pos="5.7375 0.625 0" rgba="1 0 0 1" />
 			<geom name="goalE_N" type="box" size="0.1125 0.1 0.4" pos="5.7375 -0.625 0" rgba="1 0 0 1" />
 
+			<!-- Blue goal: Blue protects, Red attacks -->
 			<geom name="goalW_E" type="box" size="0.625 0.1 0.4" pos="-5.85 0 0" rgba="0 0 1 1" euler="0 0 90" />
 			<geom name="goalW_S" type="box" size="0.1125 0.1 0.4" pos="-5.7375 0.625 0" rgba="0 0 1 1" />
 			<geom name="goalW_N" type="box" size="0.1125 0.1 0.4" pos="-5.7375 -0.625 0" rgba="0 0 1 1" />

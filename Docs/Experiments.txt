@@ -55,8 +55,17 @@ Reward simplified to moving closer to ball only. Negative reward when agent touc
 Observation:
 Agent touches and sticks to boundaries.
 
-Experiment 13:
+Experiment 13: (Chase ball completed)
 Changelog:
-To address and simplify reward structure, reward is given when ball is touched. There is no reward otherwise.
-To help with this sparse reward, DDPG + HER is implemented.
-Observation: 
+Dense reward: 0.05 * reward_vel_to_ball
+Rewards the agent for moving closer to the ball in proportion to its speed
+Training frequency increased for every 128 (batch_size) steps 
+self.env.player.ai.memory.mem_cntr % self.env.player.ai.batch_size == 0 and self.env.player.ai.memory.mem_cntr > 1000
+Observations:
+Agent successfully chases and sticks to the ball
+The agent climbs on top of the ball in the simulation. The model needs to be retrained in the next experiment due to this behaviour.
+
+Experiment 14:
+Changelog:
+Dense reward: (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal))
+Rewards the agent for scoring the ball in opponent's goal and penalises agent when scored in own goal
