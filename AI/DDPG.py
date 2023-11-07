@@ -238,8 +238,6 @@ class Agent(object):
 		self.memory.store_transition(state, action, reward, new_state, done)
 
 	def learn(self):
-		self.logger.write("Begin learning")
-
 		if self.memory.mem_cntr < self.batch_size:
 			return
 
@@ -280,6 +278,8 @@ class Agent(object):
 		self.actor.optimizer.step()
 
 		self.update_network_parameters()
+
+		return actor_loss.item(), critic_loss.item()
 
 	def update_network_parameters(self, tau = None):
 		if tau is None:
