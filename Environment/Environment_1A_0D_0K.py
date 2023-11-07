@@ -126,12 +126,12 @@ class Environment_1A_0D_0K():
 				# Apply action on player and get reward
 				speed, rotation = self.preprocess_tanh_actions(action) # ([0-20], [0-359])
 				self.player.set_heading_and_velocity(data, rotation, speed)
-				reward = self.player.get_reward(data, self.ball)
+				reward, reward_goal = self.player.get_reward(data, self.ball)
 
 				# Get new observation
 				new_observation = self.get_observation_space(data)
 
-				done = False
+				done = (reward_goal == 1) # agent score a goal
 				info = {}
 
 				return new_observation, reward, done, info

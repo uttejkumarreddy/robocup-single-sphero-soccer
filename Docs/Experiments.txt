@@ -68,4 +68,6 @@ The agent climbs on top of the ball in the simulation. The model needs to be ret
 Experiment 14:
 Changelog:
 Dense reward: (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal))
-Rewards the agent for scoring the ball in opponent's goal and penalises agent when scored in own goal
+Rewards the agent for scoring the ball in opponent's goal and penalises agent when scored in own goal.
+When ball hits the goal and reflects back, the agent might learn that hitting a goal inadverently gives a negatives reward.
+So, keep done=True on goal score and terminate the episode.

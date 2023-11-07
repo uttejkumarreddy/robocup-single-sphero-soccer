@@ -171,7 +171,7 @@ class Simulation:
 							episode_actor_loss += actor_loss
 							episode_critic_loss += critic_loss
 
-						if self.data.time > self.sim_length:
+						if self.done or (self.data.time > self.sim_length):
 							break
 
 						mj.mjv_updateScene(

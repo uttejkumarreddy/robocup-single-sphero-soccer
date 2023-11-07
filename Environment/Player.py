@@ -93,4 +93,4 @@ class Player:
 					(c.geom1 == self.id_geom_goal_to_score_in_red_team and c.geom2 == ball.id_geom):
 					reward_goal = -1
 
-			return (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal))
+			return (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal
