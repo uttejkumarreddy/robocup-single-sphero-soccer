@@ -78,3 +78,7 @@ Experiment 15:
 Changelog:
 Directed towards goal (+5.7325, 0)
 Observation:
+The ball goes outside and to the boundaries frequently.
+Due to the non-existence of Throw-in logic, the agent tries to get the ball out of the corner. 
+This is unneccessary and unwanted behavior resulting in inaccurate training.
+Need to implement Throw-in logic for the next experiment.
