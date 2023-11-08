@@ -103,7 +103,6 @@ class Player:
 				if c.geom1 == ball.id_geom and c.geom2 in self.out_of_bounds_geoms.values() \
 					or c.geom1 in self.out_of_bounds_geoms.values() and c.geom2 == ball.id_geom:
 					reward_out_of_bounds = -0.1
-					continue
 					out_of_bound_position = ball.get_position(data)
 
 					# Stop movements
