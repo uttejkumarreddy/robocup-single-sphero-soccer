@@ -97,10 +97,12 @@ class Player:
 					reward_goal = -1
 
 			# Throw in logic
+			reward_out_of_bounds = 0
 			contacts = data.contact
 			for c in contacts:
 				if c.geom1 == ball.id_geom and c.geom2 in self.out_of_bounds_geoms.values() \
 					or c.geom1 in self.out_of_bounds_geoms.values() and c.geom2 == ball.id_geom:
+					reward_out_of_bounds = -0.1
 					out_of_bound_position = ball.get_position(data)
 
 					# Stop movements
@@ -125,4 +127,4 @@ class Player:
 						self.set_position(data, [out_of_bound_position[0] + displacement_player, out_of_bound_position[1], out_of_bound_position[2]])
 						ball.set_position(data, [out_of_bound_position[0] - displacement_ball, out_of_bound_position[1], out_of_bound_position[2]])
 
-			return (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal
+			return (reward_goal + reward_out_of_bounds + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal
