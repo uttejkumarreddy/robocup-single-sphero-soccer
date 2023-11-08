@@ -85,7 +85,16 @@ Need to implement Throw-in logic for the next experiment.
 
 Experiment 16:
 Changelog:
-Implemented throw in logic and ran the experiment on Large environment.
-Archive 13 is the starting model for the training.
+Implemented throw in logic. Archive 13 is the starting model for the training.
+Introduce small negative reward for kicking ball out of bounds.
 Observation:
+The learned behavior of sticking to the ball from Archive 13 might be preventing the model from achieving the task of hitting it towards the goal.
+Throw in reset behaviour in a small field might also be preventing it from fully learning the task of scoring a goal.
+
+Experiment 17:
+Changelog:
+Disable throw in reset behaviour but keep the negative reward.
+Train the model from scratch.
+Observation:
+
 

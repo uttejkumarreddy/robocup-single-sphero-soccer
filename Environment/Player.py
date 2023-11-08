@@ -81,7 +81,7 @@ class Player:
 			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
-			goal_position = (46.8, 0)
+			goal_position = (5.85, 0)
 			ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector)
 
@@ -103,14 +103,15 @@ class Player:
 				if c.geom1 == ball.id_geom and c.geom2 in self.out_of_bounds_geoms.values() \
 					or c.geom1 in self.out_of_bounds_geoms.values() and c.geom2 == ball.id_geom:
 					reward_out_of_bounds = -0.1
+					continue
 					out_of_bound_position = ball.get_position(data)
 
 					# Stop movements
 					ball.stop(data)
 					self.set_velocity(data, [0, 0, 0])
 
-					displacement_player = 2
-					displacement_ball = 0.5
+					displacement_player = 0
+					displacement_ball = 2
 
 					if c.geom1 == self.out_of_bounds_geoms['line_S'] or c.geom2 == self.out_of_bounds_geoms['line_S']:
 						self.set_position(data, [out_of_bound_position[0], out_of_bound_position[1] + displacement_player, out_of_bound_position[2]])

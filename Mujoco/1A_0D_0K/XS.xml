@@ -25,14 +25,14 @@
 			<geom name="goalW_S" type="box" size="0.1125 0.1 0.4" pos="-5.7375 0.625 0" rgba="0 0 1 1" />
 			<geom name="goalW_N" type="box" size="0.1125 0.1 0.4" pos="-5.7375 -0.625 0" rgba="0 0 1 1" />
 
-			<!-- <geom name="line_S" type="box" size="0.001 5.625 0.01" pos="0 3.75 0" rgba="255 255 255 1" euler="90 0 90" />
+			<geom name="line_S" type="box" size="0.001 5.625 0.01" pos="0 3.75 0" rgba="255 255 255 1" euler="90 0 90" />
 			<geom name="line_N" type="box" size="0.001 5.625 0.01" pos="0 -3.75 0" rgba="255 255 255 1" euler="90 0 90" />
 			<geom name="line_goalE" type="box" size="0.001 0.625 0.01" pos="-5.625 0 0" rgba="255 255 0 1" euler="0 90 0" />
 			<geom name="line_goalE_N" type="box" size="0.001 1.5 0.01" pos="-5.625 -2.25 0" rgba="255 255 255 1" euler="0 90 0" />
 			<geom name="line_goalE_S" type="box" size="0.001 1.5 0.01" pos="-5.625 2.25 0" rgba="255 255 255 1" euler="0 90 0" />
 			<geom name="line_goalW" type="box" size="0.001 0.625 0.01" pos="5.625 0 0" rgba="255 255 0 1" euler="0 90 0" />
 			<geom name="line_goalW_N" type="box" size="0.001 1.5 0.01" pos="5.625 -2.25 0" rgba="255 255 255 1" euler="0 90 0" />
-			<geom name="line_goalW_S" type="box" size="0.001 1.5 0.01" pos="5.625 2.25 0" rgba="255 255 255 1" euler="0 90 0" /> -->
+			<geom name="line_goalW_S" type="box" size="0.001 1.5 0.01" pos="5.625 2.25 0" rgba="255 255 255 1" euler="0 90 0" />
 
 			<!-- <geom name="line_halfway" type="box" size="0.001 30 0.01" pos="0 0 0" rgba="255 255 255 1" euler="0 90 0" />
 			<geom name="line_goal2goal" type="box" size="0.001 45 0.01" pos="0 0 0" rgba="255 255 255 1" euler="90 0 90" />
