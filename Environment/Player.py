@@ -2,6 +2,7 @@ import mujoco as mj
 import numpy as np
 import math
 import os
+import time
 
 from AI import DDPG
 from AI.DDPG import ALPHA, BETA, TAU, GAMMA, BUFFER_SIZE, LAYER_1_SIZE, LAYER_2_SIZE, BATCH_SIZE
@@ -20,13 +21,6 @@ class Player:
 				self.id_geom_goal_to_score_in_blue_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'goalE_W')
 				self.id_geom_goal_to_score_in_red_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'goalW_E')
 
-				self.boundary_geoms = [
-					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_N'),
-					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_S'),
-					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_E'),
-					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'boundary_W'),
-				]
-
 				self.ai = DDPG.Agent(
 						alpha = ALPHA,
 						beta = BETA,
@@ -43,6 +37,15 @@ class Player:
 
 				# Select a random number between -np.pi and np.pi
 				self.heading = np.random.uniform(-np.pi, np.pi)
+
+				self.out_of_bounds_geoms = {
+					'line_S': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_S'),
+					'line_N': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_N'),
+					'line_goalE_N': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalE_N'),
+					'line_goalE_S': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalE_S'),
+					'line_goalW_N': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalW_N'),
+					'line_goalW_S': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalW_S'),
+				}
 
 				logger = Logger()
 				logger.write("Player {0} initialized. id_body {1} id_geom {2} id_joint {3}".format(self.name, self.id_body, self.id_geom, self.id_joint))
@@ -78,7 +81,7 @@ class Player:
 			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
-			goal_position = (5.7375, 0)
+			goal_position = (46.8, 0)
 			ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector)
 
@@ -92,5 +95,34 @@ class Player:
 				if (c.geom1 == ball.id_geom and c.geom2 == self.id_geom_goal_to_score_in_red_team) or \
 					(c.geom1 == self.id_geom_goal_to_score_in_red_team and c.geom2 == ball.id_geom):
 					reward_goal = -1
+
+			# Throw in logic
+			contacts = data.contact
+			for c in contacts:
+				if c.geom1 == ball.id_geom and c.geom2 in self.out_of_bounds_geoms.values() \
+					or c.geom1 in self.out_of_bounds_geoms.values() and c.geom2 == ball.id_geom:
+					out_of_bound_position = ball.get_position(data)
+
+					# Stop movements
+					ball.stop(data)
+					self.set_velocity(data, [0, 0, 0])
+
+					displacement_player = 2
+					displacement_ball = 0.5
+
+					if c.geom1 == self.out_of_bounds_geoms['line_S'] or c.geom2 == self.out_of_bounds_geoms['line_S']:
+						self.set_position(data, [out_of_bound_position[0], out_of_bound_position[1] + displacement_player, out_of_bound_position[2]])
+						ball.set_position(data, [out_of_bound_position[0], out_of_bound_position[1] - displacement_ball, out_of_bound_position[2]])
+					elif c.geom1 == self.out_of_bounds_geoms['line_N'] or c.geom2 == self.out_of_bounds_geoms['line_N']:
+						self.set_position(data, [out_of_bound_position[0], out_of_bound_position[1] - displacement_player, out_of_bound_position[2]])
+						ball.set_position(data, [out_of_bound_position[0], out_of_bound_position[1] + displacement_ball, out_of_bound_position[2]])
+					elif c.geom1 == self.out_of_bounds_geoms['line_goalE_N'] or c.geom2 == self.out_of_bounds_geoms['line_goalE_N'] \
+						or c.geom1 == self.out_of_bounds_geoms['line_goalE_S'] or c.geom2 == self.out_of_bounds_geoms['line_goalE_S']:
+						self.set_position(data, [out_of_bound_position[0] - displacement_player, out_of_bound_position[1], out_of_bound_position[2]])
+						ball.set_position(data, [out_of_bound_position[0] + displacement_ball, out_of_bound_position[1], out_of_bound_position[2]])
+					elif c.geom1 == self.out_of_bounds_geoms['line_goalW_N'] or c.geom2 == self.out_of_bounds_geoms['line_goalW_N'] \
+						or c.geom1 == self.out_of_bounds_geoms['line_goalW_S'] or c.geom2 == self.out_of_bounds_geoms['line_goalW_S']:
+						self.set_position(data, [out_of_bound_position[0] + displacement_player, out_of_bound_position[1], out_of_bound_position[2]])
+						ball.set_position(data, [out_of_bound_position[0] - displacement_ball, out_of_bound_position[1], out_of_bound_position[2]])
 
 			return (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal

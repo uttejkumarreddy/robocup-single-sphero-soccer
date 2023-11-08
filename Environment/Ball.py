@@ -20,3 +20,6 @@ class Ball:
 
 	def get_velocity(self, data):
 		return data.qvel[self.id_joint * 6: self.id_joint * 6 + 6]
+
+	def stop(self, data):
+		data.qvel[self.id_joint * 6: self.id_joint * 6 + 6] = [0, 0, 0, 0, 0, 0]

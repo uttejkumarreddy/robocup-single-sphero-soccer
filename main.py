@@ -5,7 +5,7 @@ import Environment
 os.environ['SOCCER_ENV'] = '1A_0D_0K'
 
 # Field size: [XS, S, M, L]
-os.environ['SOCCER_DIMS'] = 'XS'
+os.environ['SOCCER_DIMS'] = 'L'
 
 MAX_EPISODES = 100000
 

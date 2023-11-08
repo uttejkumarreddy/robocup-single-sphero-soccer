@@ -4,6 +4,7 @@ from Environment.Ball import Ball
 from Utilities.Logger import Logger
 from gymnasium import spaces
 import numpy as np
+import mujoco as mj
 import os
 
 class Environment_1A_0D_0K():
@@ -131,7 +132,9 @@ class Environment_1A_0D_0K():
 				# Get new observation
 				new_observation = self.get_observation_space(data)
 
-				done = (reward_goal == 1) # agent score a goal
+				# if agent scores a goal
+				done = (reward_goal != 0)  
+
 				info = {}
 
 				return new_observation, reward, done, info

@@ -114,6 +114,7 @@ class Simulation:
 
 		def init_controller(self, model, data):
 				FIELD_LENGTH, FIELD_WIDTH = envProps.OBSERVATION_SPACE[os.environ['SOCCER_DIMS']]['FIELD_DIMENSIONS']
+				FIELD_LENGTH, FIELD_WIDTH = FIELD_LENGTH - 5, FIELD_WIDTH - 5
 
 				if envProps.RANDOMIZE_INITIAL_POSITIONS_PLAYERS == True:
 						random_position = (
