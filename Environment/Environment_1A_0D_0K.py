@@ -26,13 +26,16 @@ class Environment_1A_0D_0K():
 				observation_space_low = np.array([
 					-FIELD_LENGTH, 											# agent_pos_x
 					-FIELD_WIDTH, 											# agent_pos_y
-					p.ENV_BOLT_MIN_SPEED, 									# agent_vel_x
-					p.ENV_BOLT_MIN_SPEED, 									# agent_vel_y
-					p.ENV_BOLT_MIN_ROTATION,								# agent_heading
+					p.ENV_BOLT_MIN_SPEED, 							# agent_vel_x
+					p.ENV_BOLT_MIN_SPEED, 							# agent_vel_y
+					p.ENV_BOLT_MIN_ROTATION,						# agent_heading
 					-FIELD_LENGTH, 											# ball_pos_x
 					-FIELD_WIDTH, 											# ball_pos_y
-					p.ENV_BALL_MIN_SPEED,  									# ball_vel_x
-					p.ENV_BALL_MIN_SPEED,									# ball_vel_y
+					p.ENV_BALL_MIN_SPEED,  							# ball_vel_x
+					p.ENV_BALL_MIN_SPEED,								# ball_vel_y
+					-FIELD_LENGTH, -FIELD_WIDTH,				# away_player_1_pos_x, away_player_1_pos_y
+					-FIELD_LENGTH, -FIELD_WIDTH,				# away_player_2_pos_x, away_player_2_pos_y
+					-FIELD_LENGTH, -FIELD_WIDTH,				# away_player_3_pos_x, away_player_3_pos_y
 					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
 					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
 					-abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
@@ -40,15 +43,18 @@ class Environment_1A_0D_0K():
 				], dtype=np.float32,)
 
 				observation_space_high = np.array([
-					FIELD_LENGTH, 											# agent_pos_x
+					FIELD_LENGTH, 										# agent_pos_x
 					FIELD_WIDTH, 											# agent_pos_y
-					p.ENV_BOLT_MAX_SPEED, 									# agent_vel_x
-					p.ENV_BOLT_MAX_SPEED, 									# agent_vel_y
-					p.ENV_BOLT_MAX_ROTATION,								# agent_heading
-					FIELD_LENGTH, 											# ball_pos_x
+					p.ENV_BOLT_MAX_SPEED, 						# agent_vel_x
+					p.ENV_BOLT_MAX_SPEED, 						# agent_vel_y
+					p.ENV_BOLT_MAX_ROTATION,					# agent_heading
+					FIELD_LENGTH, 										# ball_pos_x
 					FIELD_WIDTH, 											# ball_pos_y
-					p.ENV_BALL_MAX_SPEED,  									# ball_vel_x
-					p.ENV_BALL_MAX_SPEED,									# ball_vel_y
+					p.ENV_BALL_MAX_SPEED,  						# ball_vel_x
+					p.ENV_BALL_MAX_SPEED,							# ball_vel_y
+					FIELD_LENGTH, FIELD_WIDTH,				# away_player_1_pos_x, away_player_1_pos_y
+					FIELD_LENGTH, FIELD_WIDTH,				# away_player_2_pos_x, away_player_2_pos_y
+					FIELD_LENGTH, FIELD_WIDTH,				# away_player_3_pos_x, away_player_3_pos_y
 					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_top_x
 					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][1]), 	# goal_top_y
 					abs(p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'][0]), 	# goal_bottom_x
@@ -110,11 +116,16 @@ class Environment_1A_0D_0K():
 				ball_position = self.ball.get_position(data)
 				ball_velocity = self.ball.get_velocity(data)[:2]
 
+				away_player_1_position = self.away_player_1.get_position(data)
+				away_player_2_position = self.away_player_2.get_position(data)
+				away_player_3_position = self.away_player_3.get_position(data)
+
 				state_player = np.concatenate((player_position[:2], player_velocity, player_rotation))
 				state_ball = np.concatenate((ball_position[:2], ball_velocity))
+				state_obstacle = np.concatenate((away_player_1_position[:2], away_player_2_position[:2], away_player_3_position[:2]))
 				state_goal = np.concatenate((p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_TOP'], p.OBSERVATION_SPACE[self.SIZE]['GOAL_HOME_BOTTOM']))
 
-				state_space = np.concatenate((state_player, state_ball, state_goal))
+				state_space = np.concatenate((state_player, state_ball, state_obstacle, state_goal))
 				return state_space
 
 		def scale_linear(self, x, min, max):

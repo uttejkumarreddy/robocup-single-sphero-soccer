@@ -147,8 +147,8 @@ class Player:
 			reward_collision = 0
 			contacts = data.contact
 			for c in contacts:
-				if c.geom1 == ball.id_geom and c.geom2 in self.away_team_geoms \
-					or c.geom1 in self.away_team_geoms and c.geom2 == ball.id_geom:
+				if c.geom1 == self.id_geom and c.geom2 in self.away_team_geoms \
+					or c.geom1 in self.away_team_geoms and c.geom2 == self.id_geom:
 					reward_collision = -1
 
 			return (reward_collision + (0.05 * reward_vel_to_ball)), reward_collision

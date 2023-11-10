@@ -9,7 +9,7 @@ import numpy as np
 import time
 
 class Simulation:
-		def __init__(self, env, sim_length=45, frames_per_second=60):
+		def __init__(self, env, sim_length=5, frames_per_second=60):
 				self.env = env
 				self.logger = Logger()
 
@@ -115,6 +115,8 @@ class Simulation:
 		def init_controller(self, model, data):
 				FIELD_LENGTH, FIELD_WIDTH = envProps.OBSERVATION_SPACE[os.environ['SOCCER_DIMS']]['FIELD_DIMENSIONS']
 				FIELD_LENGTH, FIELD_WIDTH = FIELD_LENGTH, FIELD_WIDTH
+				spawn_x_limit = FIELD_LENGTH - 3
+				spawn_y_limit = FIELD_WIDTH - 3
 
 				if envProps.RANDOMIZE_INITIAL_POSITIONS_PLAYERS == True:
 						random_position = (
@@ -126,8 +128,8 @@ class Simulation:
 
 				if envProps.RANDOMIZE_INITIAL_POSITIONS_BALL == True:
 						random_position = (
-								np.random.uniform(-FIELD_LENGTH, FIELD_LENGTH),
-								np.random.uniform(-FIELD_WIDTH, FIELD_WIDTH),
+								np.random.uniform(-spawn_x_limit, spawn_x_limit),
+								np.random.uniform(-spawn_y_limit, spawn_y_limit),
 								envProps.RADIUS_BALL,
 						)
 						self.env.ball.set_position(data, random_position)
