@@ -14,6 +14,7 @@ class Logger:
 
 		# Read file names from folder
 		file_names = os.listdir(self.path_logs)
+		file_names.remove('.gitkeep')
 
 		if len(file_names) == 0:
 			self.current_log_number = -1

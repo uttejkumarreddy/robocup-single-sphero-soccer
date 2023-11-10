@@ -43,6 +43,8 @@
 			<geom name="line_defenceE_N" type="box" size="0.001 5 0.01" pos="-40 -10 0" rgba="255 255 255 1" euler="90 0 90" />
 			<geom name="line_defenceE_W" type="box" size="0.001 10 0.01" pos="-35 0 0" rgba="255 255 255 1" euler="0 90 0" /> -->
 
+			
+
 		</body>
 
 		<body name="ball" pos="-1 1 0.215">
@@ -53,6 +55,20 @@
 		<body name="home_player_1" pos="5 5 0.365">
 			<geom name="home_player_1" type="sphere" size="0.365" rgba="0 0 1 1" mass="200" density="100" />
 			<joint name="home_player_1" type="free" />
+		</body>
+
+		<!-- Obstacles -->
+		<body name="away_player_1" pos="2.5 2.5 0.365">
+			<geom name="away_player_1" type="sphere" size="0.365" rgba="1 0 0 1" mass="200" density="100" />
+			<joint name="away_player_1" type="free" />
+		</body>
+		<body name="away_player_2" pos="2.5 2.5 0.365">
+			<geom name="away_player_2" type="sphere" size="0.365" rgba="1 0 0 1" mass="200" density="100" />
+			<joint name="away_player_2" type="free" />
+		</body>
+		<body name="away_player_3" pos="2.5 2.5 0.365">
+			<geom name="away_player_3" type="sphere" size="0.365" rgba="1 0 0 1" mass="200" density="100" />
+			<joint name="away_player_3" type="free" />
 		</body>
 
 	</worldbody>
