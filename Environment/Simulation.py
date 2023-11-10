@@ -132,19 +132,17 @@ class Simulation:
 						)
 						self.env.ball.set_position(data, random_position)
 
-				# Set obstacles: away_player_1, away_player_2, away_player_3 are the obstacles
-				# They need to be placed in between ball and player in a straight line adjacent to each other 
+				# Spawn obstacles in between the player and the ball in a line perpendicular to the line connecting the player and the ball
 				player_position = self.env.player.get_position(data)
 				ball_position = self.env.ball.get_position(data)
 
-				# Calculate the midpoint between player and ball
 				midpoint = ((player_position[0] + ball_position[0]) / 2, (player_position[1] + ball_position[1]) / 2)
+				angle = np.arctan2(ball_position[1] - player_position[1], ball_position[0] - player_position[0]) + np.pi / 2
 
 				gap_inbetween = envProps.RADIUS_PLAYER * 2
 				self.env.away_player_1.set_position(data, (midpoint[0], midpoint[1], envProps.RADIUS_PLAYER))
-				self.env.away_player_2.set_position(data, (midpoint[0] - gap_inbetween, midpoint[1], envProps.RADIUS_PLAYER))
-				self.env.away_player_3.set_position(data, (midpoint[0] + gap_inbetween, midpoint[1], envProps.RADIUS_PLAYER))
-
+				self.env.away_player_2.set_position(data, (midpoint[0] - gap_inbetween * np.cos(angle), midpoint[1] - gap_inbetween * np.sin(angle), envProps.RADIUS_PLAYER))
+				self.env.away_player_3.set_position(data, (midpoint[0] + gap_inbetween * np.cos(angle), midpoint[1] + gap_inbetween * np.sin(angle), envProps.RADIUS_PLAYER))
 
 				self.observation = self.env.get_observation_space(data)
 				self.nsteps = 0
