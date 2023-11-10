@@ -9,7 +9,7 @@ import numpy as np
 import time
 
 class Simulation:
-		def __init__(self, env, sim_length=5, frames_per_second=60):
+		def __init__(self, env, sim_length=45, frames_per_second=60):
 				self.env = env
 				self.logger = Logger()
 
