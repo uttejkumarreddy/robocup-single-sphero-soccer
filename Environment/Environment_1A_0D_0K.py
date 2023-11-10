@@ -143,13 +143,13 @@ class Environment_1A_0D_0K():
 				# Apply action on player and get reward
 				speed, rotation = self.preprocess_tanh_actions(action) # ([0-20], [0-359])
 				self.player.set_heading_and_velocity(data, rotation, speed)
-				reward, reward_collision = self.player.get_reward(data, self.ball)
+				reward, done = self.player.get_reward(data, self.ball)
 
 				# Get new observation
 				new_observation = self.get_observation_space(data)
 
-				# if agent collides with away players
-				done = (reward_collision == -1)  
+				# if agent collides with away players or agent touches ball
+				done = done
 
 				info = {}
 
