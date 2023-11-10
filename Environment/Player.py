@@ -47,6 +47,12 @@ class Player:
 					'line_goalW_S': mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalW_S'),
 				}
 
+				self.away_team_geoms = [
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'away_player_1'),
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'away_player_2'),
+					mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'away_player_3'),
+				]
+
 				logger = Logger()
 				logger.write("Player {0} initialized. id_body {1} id_geom {2} id_joint {3}".format(self.name, self.id_body, self.id_geom, self.id_joint))
 
@@ -80,6 +86,7 @@ class Player:
 			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
 			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
+			'''
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
 			goal_position = None
 			if self.team == p.TEAM_HOME:
@@ -89,8 +96,10 @@ class Player:
 
 			ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector)
+			'''
 
 			# goal: the ball touches the back net
+			''' Reward goal
 			reward_goal = 0
 			contacts = data.contact
 			for c in contacts:
@@ -100,8 +109,9 @@ class Player:
 				if (c.geom1 == ball.id_geom and c.geom2 == self.id_geom_goal_to_score_in_red_team) or \
 					(c.geom1 == self.id_geom_goal_to_score_in_red_team and c.geom2 == ball.id_geom):
 					reward_goal = -1
+			'''
 
-			# Throw in logic
+			''' Throw in logic
 			reward_out_of_bounds = 0
 			contacts = data.contact
 			for c in contacts:
@@ -131,5 +141,14 @@ class Player:
 						or c.geom1 == self.out_of_bounds_geoms['line_goalW_S'] or c.geom2 == self.out_of_bounds_geoms['line_goalW_S']:
 						self.set_position(data, [out_of_bound_position[0] + displacement_player, out_of_bound_position[1], out_of_bound_position[2]])
 						ball.set_position(data, [out_of_bound_position[0] - displacement_ball, out_of_bound_position[1], out_of_bound_position[2]])
+				'''
 
-			return (reward_goal + reward_out_of_bounds + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal
+			# Give -1 reward if the player touches the away team
+			reward_collision = 0
+			contacts = data.contact
+			for c in contacts:
+				if c.geom1 == ball.id_geom and c.geom2 in self.away_team_geoms \
+					or c.geom1 in self.away_team_geoms and c.geom2 == ball.id_geom:
+					reward_collision = -1
+
+			return (reward_collision + (0.05 * reward_vel_to_ball)), reward_collision

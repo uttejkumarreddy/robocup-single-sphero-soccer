@@ -85,6 +85,11 @@ class Environment_1A_0D_0K():
 
 				# Ball
 				self.ball = Ball(model, p.BALL)
+
+				# Away players
+				self.away_player_1 = Player(model, p.TEAM_AWAY, "away_player_1", self.observation_space, self.action_space,)
+				self.away_player_2 = Player(model, p.TEAM_AWAY, "away_player_2", self.observation_space, self.action_space,)
+				self.away_player_3 = Player(model, p.TEAM_AWAY, "away_player_3", self.observation_space, self.action_space,)
 			
 		def get_speed_from_velocity(self, velocity):
 				x_vel, y_vel = velocity[0], velocity[1]
@@ -127,13 +132,13 @@ class Environment_1A_0D_0K():
 				# Apply action on player and get reward
 				speed, rotation = self.preprocess_tanh_actions(action) # ([0-20], [0-359])
 				self.player.set_heading_and_velocity(data, rotation, speed)
-				reward, reward_goal = self.player.get_reward(data, self.ball)
+				reward, reward_collision = self.player.get_reward(data, self.ball)
 
 				# Get new observation
 				new_observation = self.get_observation_space(data)
 
-				# if agent scores a goal
-				done = (reward_goal != 0)  
+				# if agent collides with away players
+				done = (reward_collision == -1)  
 
 				info = {}
 
