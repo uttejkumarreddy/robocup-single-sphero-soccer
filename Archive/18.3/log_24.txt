@@ -1,0 +1,1001 @@
+2023-11-10 11:48:49.421494: Created new log file
+2023-11-10 11:48:49.427477: START: Episode count: 2664
+2023-11-10 11:48:49.432464: Initial player position: [ 3.29074578 -0.27793022  0.365     ], ball position: [1.91782624 0.94758183 0.215     ]
+2023-11-10 11:48:49.480184: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:49.489194: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:49.497582: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:49.506558: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:49.515954: Episode count 2664, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:49.521446: Final player position: [ 3.19176358 -0.02843064  0.36579662], ball position: [1.91782624 0.94758183 0.2146315 ]
+2023-11-10 11:48:49.527429: END: Episode count 2664, Episode length: 0.07200000000000005, Score: -0.03575143873793851
+2023-11-10 11:48:49.532298: START: Episode count: 2665
+2023-11-10 11:48:49.537287: Initial player position: [ 5.30343999 -2.50299124  0.365     ], ball position: [-2.68327987  0.16632822  0.215     ]
+2023-11-10 11:48:50.213111: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:50.225064: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:50.233450: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:50.243419: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:50.252393: Episode count 2665, Actor loss: -2.096113681793213, Critic loss: 0.008141695521771908
+2023-11-10 11:48:50.258351: Final player position: [ 2.16820077 -0.83338189  0.36532762], ball position: [-2.68327987  0.16632822  0.21463282]
+2023-11-10 11:48:50.263337: END: Episode count 2665, Episode length: 0.7020000000000005, Score: 8.943101560405996
+2023-11-10 11:48:50.269322: START: Episode count: 2666
+2023-11-10 11:48:50.274419: Initial player position: [2.84467955 3.56571201 0.365     ], ball position: [-0.05788801 -0.13634729  0.215     ]
+2023-11-10 11:48:50.612140: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:50.627264: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:50.636347: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:50.645277: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:50.655251: Episode count 2666, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:50.660937: Final player position: [1.69931864 2.35243744 0.36605413], ball position: [-0.05788801 -0.13634729  0.21463282]
+2023-11-10 11:48:50.665829: END: Episode count 2666, Episode length: 0.3780000000000003, Score: 3.884996828991623
+2023-11-10 11:48:50.671846: START: Episode count: 2667
+2023-11-10 11:48:50.677830: Initial player position: [-4.35058576  3.25416732  0.365     ], ball position: [-0.28727882 -0.32087395  0.215     ]
+2023-11-10 11:48:51.095386: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:51.105360: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:51.114336: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:51.123312: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:51.132532: Episode count 2667, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:51.138623: Final player position: [-2.98837859  1.66706635  0.36833546], ball position: [-0.28727882 -0.32087395  0.21463282]
+2023-11-10 11:48:51.143645: END: Episode count 2667, Episode length: 0.46800000000000036, Score: 5.027471640635083
+2023-11-10 11:48:51.149629: START: Episode count: 2668
+2023-11-10 11:48:51.155581: Initial player position: [-2.3288335   2.25076178  0.365     ], ball position: [2.93579077 0.36334555 0.215     ]
+2023-11-10 11:48:51.596165: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:51.605142: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:51.614152: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:51.624130: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:51.632880: Episode count 2668, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:51.639211: Final player position: [-0.34488424  1.49704449  0.37469896], ball position: [2.93579077 0.36334555 0.21463282]
+2023-11-10 11:48:51.646194: END: Episode count 2668, Episode length: 0.4860000000000004, Score: 5.257815112319307
+2023-11-10 11:48:51.651217: START: Episode count: 2669
+2023-11-10 11:48:51.656794: Initial player position: [-2.67678203 -2.43750431  0.365     ], ball position: [-2.50064257  0.81157305  0.215     ]
+2023-11-10 11:48:51.861796: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:51.871770: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:51.880785: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:51.890721: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:51.899695: Episode count 2669, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:51.905462: Final player position: [-2.71792681 -1.49721162  0.36646366], ball position: [-2.50064257  0.81157305  0.21463282]
+2023-11-10 11:48:51.911345: END: Episode count 2669, Episode length: 0.23400000000000018, Score: 1.8861365898229223
+2023-11-10 11:48:51.916332: START: Episode count: 2670
+2023-11-10 11:48:51.922017: Initial player position: [-5.69658872  1.76620231  0.365     ], ball position: [0.01742    0.05312396 0.215     ]
+2023-11-10 11:48:52.378257: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:52.388738: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:52.397692: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:52.408470: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:52.417497: Episode count 2670, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:52.424429: Final player position: [-3.46927976  1.20210868  0.36865496], ball position: [0.01742    0.05312396 0.21463282]
+2023-11-10 11:48:52.430444: END: Episode count 2670, Episode length: 0.5040000000000003, Score: 5.565144628712476
+2023-11-10 11:48:52.435431: START: Episode count: 2671
+2023-11-10 11:48:52.441382: Initial player position: [4.50373425 0.57271872 0.365     ], ball position: [-2.88452752  0.97932875  0.215     ]
+2023-11-10 11:48:53.095578: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:53.104912: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:53.114586: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:53.124049: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:53.132727: Episode count 2671, Actor loss: -1.82891047000885, Critic loss: 0.07328931242227554
+2023-11-10 11:48:53.139018: Final player position: [1.44349024 0.15426723 0.37213229], ball position: [-2.88452752  0.97932875  0.21463282]
+2023-11-10 11:48:53.145035: END: Episode count 2671, Episode length: 0.6840000000000005, Score: 7.6626064299845895
+2023-11-10 11:48:53.149989: START: Episode count: 2672
+2023-11-10 11:48:53.156016: Initial player position: [-2.64149134  1.13720848  0.365     ], ball position: [-1.11235506 -0.07609312  0.215     ]
+2023-11-10 11:48:53.230059: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:53.248962: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:53.265916: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:53.274891: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:53.284902: Episode count 2672, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:53.290886: Final player position: [-2.43256374  0.92243563  0.36520878], ball position: [-1.11235506 -0.07609312  0.21463112]
+2023-11-10 11:48:53.297831: END: Episode count 2672, Episode length: 0.09000000000000007, Score: 0.12727404186760571
+2023-11-10 11:48:53.303814: START: Episode count: 2673
+2023-11-10 11:48:53.309798: Initial player position: [1.50166829 2.67876125 0.365     ], ball position: [1.57777725 0.69838632 0.215     ]
+2023-11-10 11:48:53.412209: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:53.427334: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:53.437551: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:53.446217: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:53.456530: Episode count 2673, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:53.462055: Final player position: [1.51296738 2.37013934 0.36552323], ball position: [1.57777725 0.69838632 0.21463112]
+2023-11-10 11:48:53.468042: END: Episode count 2673, Episode length: 0.09000000000000007, Score: 0.15931852158570226
+2023-11-10 11:48:53.474025: START: Episode count: 2674
+2023-11-10 11:48:53.480039: Initial player position: [-5.59638392 -1.85624697  0.365     ], ball position: [-1.29317364  0.68222281  0.215     ]
+2023-11-10 11:48:53.877795: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:53.888766: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:53.897758: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:53.906718: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:53.916737: Episode count 2674, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:53.922721: Final player position: [-3.63592279 -1.62360612  0.36810589], ball position: [-1.29317364  0.68222281  0.21463282]
+2023-11-10 11:48:53.927740: END: Episode count 2674, Episode length: 0.45000000000000034, Score: 4.013527830037526
+2023-11-10 11:48:53.933692: START: Episode count: 2675
+2023-11-10 11:48:53.939676: Initial player position: [-5.65995369  3.24488503  0.365     ], ball position: [-1.63008541  1.02985862  0.215     ]
+2023-11-10 11:48:54.278574: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:54.289544: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:54.300514: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:54.310855: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:54.320021: Episode count 2675, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:54.327003: Final player position: [-4.2385058   2.47636766  0.36888003], ball position: [-1.63008541  1.02985862  0.21463282]
+2023-11-10 11:48:54.332025: END: Episode count 2675, Episode length: 0.3780000000000003, Score: 3.7198493118250124
+2023-11-10 11:48:54.338322: START: Episode count: 2676
+2023-11-10 11:48:54.344309: Initial player position: [ 3.03876069 -1.24690679  0.365     ], ball position: [-2.04497523 -0.82660588  0.215     ]
+2023-11-10 11:48:54.745139: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:54.755112: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:54.763820: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:54.773029: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:54.783003: Episode count 2676, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:54.789578: Final player position: [ 1.1321343  -0.72732102  0.3672589 ], ball position: [-2.04497523 -0.82660588  0.21463282]
+2023-11-10 11:48:54.795564: END: Episode count 2676, Episode length: 0.45000000000000034, Score: 4.6475165443461695
+2023-11-10 11:48:54.800583: START: Episode count: 2677
+2023-11-10 11:48:54.807046: Initial player position: [ 2.93555172 -3.47697608  0.365     ], ball position: [ 2.1322164  -0.32411725  0.215     ]
+2023-11-10 11:48:55.011736: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:55.021709: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:55.030685: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:55.040347: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:55.050044: Episode count 2677, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:55.055562: Final player position: [ 2.88820903 -2.50400316  0.36594635], ball position: [ 2.1322164  -0.32411725  0.21463282]
+2023-11-10 11:48:55.061752: END: Episode count 2677, Episode length: 0.23400000000000018, Score: 1.9181830753476006
+2023-11-10 11:48:55.067439: START: Episode count: 2678
+2023-11-10 11:48:55.073918: Initial player position: [ 1.64020094 -2.25584666  0.365     ], ball position: [ 0.61368789 -0.10279285  0.215     ]
+2023-11-10 11:48:55.210582: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:55.220549: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:55.231529: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:55.241493: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:55.251467: Episode count 2678, Actor loss: -1.8658478260040283, Critic loss: 0.07688596099615097
+2023-11-10 11:48:55.257834: Final player position: [ 1.4495032  -1.80435074  0.36628442], ball position: [ 0.61368789 -0.10279285  0.21463241]
+2023-11-10 11:48:55.263745: END: Episode count 2678, Episode length: 0.12600000000000008, Score: 0.6331128222210266
+2023-11-10 11:48:55.269766: START: Episode count: 2679
+2023-11-10 11:48:55.275714: Initial player position: [-1.39081891  1.61737602  0.365     ], ball position: [1.46384208 1.03203461 0.215     ]
+2023-11-10 11:48:55.427945: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:55.436952: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:55.447890: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:55.458204: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:55.467912: Episode count 2679, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:55.473929: Final player position: [-0.63426617  1.53481481  0.36549356], ball position: [1.46384208 1.03203461 0.21463281]
+2023-11-10 11:48:55.479914: END: Episode count 2679, Episode length: 0.18000000000000013, Score: 1.3795898488431533
+2023-11-10 11:48:55.484897: START: Episode count: 2680
+2023-11-10 11:48:55.491204: Initial player position: [-5.11082799  1.90723859  0.365     ], ball position: [2.36025262 0.49642357 0.215     ]
+2023-11-10 11:48:56.111037: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:56.120758: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:56.130839: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:56.141206: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:56.151176: Episode count 2680, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:56.157531: Final player position: [-2.05005599  1.16211244  0.37481988], ball position: [2.36025262 0.49642357 0.21463282]
+2023-11-10 11:48:56.162484: END: Episode count 2680, Episode length: 0.6840000000000005, Score: 8.109552381344058
+2023-11-10 11:48:56.168814: START: Episode count: 2681
+2023-11-10 11:48:56.175364: Initial player position: [-1.49605235 -3.61303926  0.365     ], ball position: [-2.67247982 -0.5240357   0.215     ]
+2023-11-10 11:48:56.377882: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:56.387855: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:56.397873: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:56.407801: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:56.417767: Episode count 2681, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:56.424750: Final player position: [-1.89417152 -2.74105761  0.36794078], ball position: [-2.67247982 -0.5240357   0.21463282]
+2023-11-10 11:48:56.430738: END: Episode count 2681, Episode length: 0.23400000000000018, Score: 1.9227213622636037
+2023-11-10 11:48:56.436218: START: Episode count: 2682
+2023-11-10 11:48:56.441856: Initial player position: [-4.5118596  -1.86971693  0.365     ], ball position: [-0.10552001  0.33634188  0.215     ]
+2023-11-10 11:48:56.794062: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:56.806001: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:56.816023: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:56.825000: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:56.834973: Episode count 2682, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:56.841954: Final player position: [-2.91739813 -1.10155602  0.36872831], ball position: [-0.10552001  0.33634188  0.21463282]
+2023-11-10 11:48:56.847971: END: Episode count 2682, Episode length: 0.3960000000000003, Score: 4.227655719521835
+2023-11-10 11:48:56.853954: START: Episode count: 2683
+2023-11-10 11:48:56.859470: Initial player position: [4.26677162 0.63994866 0.365     ], ball position: [1.32263771 0.3087763  0.215     ]
+2023-11-10 11:48:57.060980: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:57.070519: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:57.080423: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:57.089998: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:57.099620: Episode count 2683, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:57.105577: Final player position: [3.47163093 0.06972516 0.37025601], ball position: [1.32263771 0.3087763  0.21463282]
+2023-11-10 11:48:57.111834: END: Episode count 2683, Episode length: 0.23400000000000018, Score: 1.464357152114686
+2023-11-10 11:48:57.117552: START: Episode count: 2684
+2023-11-10 11:48:57.123538: Initial player position: [5.80957261 0.39539068 0.365     ], ball position: [ 1.78028555 -0.31541263  0.215     ]
+2023-11-10 11:48:57.394210: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:57.531130: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:57.540303: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:57.550893: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:57.560353: Episode count 2684, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:57.566285: Final player position: [ 4.5001567  -0.40123089  0.5786819 ], ball position: [ 1.78028555 -0.31541263  0.21463282]
+2023-11-10 11:48:57.572297: END: Episode count 2684, Episode length: 0.3060000000000002, Score: 2.6279064257417026
+2023-11-10 11:48:57.578287: START: Episode count: 2685
+2023-11-10 11:48:57.584238: Initial player position: [4.431824   0.30537021 0.365     ], ball position: [-2.41665373 -0.59354118  0.215     ]
+2023-11-10 11:48:58.160655: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:58.170628: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:58.179604: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:58.189577: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:58.199551: Episode count 2685, Actor loss: -2.0817084312438965, Critic loss: 0.03551246598362923
+2023-11-10 11:48:58.205553: Final player position: [1.59443669 0.58859974 0.37267993], ball position: [-2.41665373 -0.59354118  0.21463282]
+2023-11-10 11:48:58.211551: END: Episode count 2685, Episode length: 0.5940000000000004, Score: 6.941624729613963
+2023-11-10 11:48:58.217503: START: Episode count: 2686
+2023-11-10 11:48:58.223487: Initial player position: [-2.53200375 -2.32744437  0.365     ], ball position: [-0.7808854   0.69112196  0.215     ]
+2023-11-10 11:48:58.559537: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:48:58.569511: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:48:58.579484: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:48:58.589457: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:48:58.599458: Episode count 2686, Actor loss: 0, Critic loss: 0
+2023-11-10 11:48:58.605447: Final player position: [-0.79970309 -1.85166812  0.3648513 ], ball position: [-0.7808854   0.69112196  0.21463282]
+2023-11-10 11:48:58.611431: END: Episode count 2686, Episode length: 0.3780000000000003, Score: 1.9720271548739614
+2023-11-10 11:48:58.617410: START: Episode count: 2687
+2023-11-10 11:48:58.623367: Initial player position: [-5.75285924  1.26372891  0.365     ], ball position: [1.38160796 0.85123504 0.215     ]
+2023-11-10 11:49:00.076865: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:00.086838: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:00.097808: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:00.107210: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:00.117188: Episode count 2687, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:00.124138: Final player position: [1.32136972 0.34469289 0.36585409], ball position: [1.38503077 0.86906759 0.21120671]
+2023-11-10 11:49:00.130153: END: Episode count 2687, Episode length: 1.5840000000000012, Score: 19.720171625492135
+2023-11-10 11:49:00.135958: START: Episode count: 2688
+2023-11-10 11:49:00.141943: Initial player position: [-2.17811567 -3.28910773  0.365     ], ball position: [ 1.81337784 -0.90930821  0.215     ]
+2023-11-10 11:49:01.176188: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:01.186160: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:01.197130: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:01.207103: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:01.217077: Episode count 2688, Actor loss: -2.1239352226257324, Critic loss: 0.024223800748586655
+2023-11-10 11:49:01.223094: Final player position: [ 1.37648729 -1.16894528  0.36726684], ball position: [ 1.83415389 -0.89618707  0.21341131]
+2023-11-10 11:49:01.229553: END: Episode count 2688, Episode length: 1.0980000000000008, Score: 12.835923270038355
+2023-11-10 11:49:01.235539: START: Episode count: 2689
+2023-11-10 11:49:01.241524: Initial player position: [5.48115845 3.78501285 0.365     ], ball position: [-0.93987047  0.56108365  0.215     ]
+2023-11-10 11:49:01.775110: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:01.785422: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:01.795402: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:01.805370: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:01.815352: Episode count 2689, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:01.822327: Final player position: [2.84319235 2.51798437 0.37476841], ball position: [-0.93987047  0.56108365  0.21463282]
+2023-11-10 11:49:01.828277: END: Episode count 2689, Episode length: 0.5940000000000004, Score: 7.479171982386123
+2023-11-10 11:49:01.833293: START: Episode count: 2690
+2023-11-10 11:49:01.839725: Initial player position: [1.18347256 2.50383044 0.365     ], ball position: [-2.30189066  0.70537106  0.215     ]
+2023-11-10 11:49:02.093683: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:02.104261: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:02.115234: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:02.126184: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:02.135180: Episode count 2690, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:02.142128: Final player position: [0.1277485  1.67150154 0.36761203], ball position: [-2.30189066  0.70537106  0.21463282]
+2023-11-10 11:49:02.148029: END: Episode count 2690, Episode length: 0.2880000000000002, Score: 2.9421694593814083
+2023-11-10 11:49:02.154015: START: Episode count: 2691
+2023-11-10 11:49:02.159480: Initial player position: [-2.54188765 -1.56618492  0.365     ], ball position: [-0.6958769   0.02269316  0.215     ]
+2023-11-10 11:49:02.259197: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:02.270169: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:02.280141: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:02.290114: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:02.300088: Episode count 2691, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:02.307070: Final player position: [-2.1409121  -1.22342928  0.36506573], ball position: [-0.6958769   0.02269316  0.21463241]
+2023-11-10 11:49:02.313062: END: Episode count 2691, Episode length: 0.12600000000000008, Score: 0.7520086656812214
+2023-11-10 11:49:02.319037: START: Episode count: 2692
+2023-11-10 11:49:02.325058: Initial player position: [5.74923958 0.37276147 0.365     ], ball position: [-2.79422753  0.8976771   0.215     ]
+2023-11-10 11:49:04.090983: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:04.101954: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:04.111927: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:04.121900: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:04.131874: Episode count 2692, Actor loss: -1.9115170240402222, Critic loss: 0.08803427219390869
+2023-11-10 11:49:04.137894: Final player position: [-2.69238336  0.4384122   0.36971839], ball position: [-2.79766264  0.94390411  0.20589607]
+2023-11-10 11:49:04.144839: END: Episode count 2692, Episode length: 1.8900000000000015, Score: 23.41135171092162
+2023-11-10 11:49:04.150824: START: Episode count: 2693
+2023-11-10 11:49:04.156807: Initial player position: [-3.90506203  3.85812     0.365     ], ball position: [-0.54101262 -0.219211    0.215     ]
+2023-11-10 11:49:04.508436: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:04.518409: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:04.529138: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:04.539535: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:04.549335: Episode count 2693, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:04.556303: Final player position: [-2.26913987  2.65441618  0.36554417], ball position: [-0.54101262 -0.219211    0.21463282]
+2023-11-10 11:49:04.562703: END: Episode count 2693, Episode length: 0.3960000000000003, Score: 4.522292693708218
+2023-11-10 11:49:04.568419: START: Episode count: 2694
+2023-11-10 11:49:04.575428: Initial player position: [ 1.27660703 -0.39352109  0.365     ], ball position: [-2.89070249 -1.01278027  0.215     ]
+2023-11-10 11:49:04.890734: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:04.901704: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:04.910681: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:04.920654: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:04.930628: Episode count 2694, Actor loss: -2.0995547771453857, Critic loss: 0.06824863702058792
+2023-11-10 11:49:04.936644: Final player position: [ 9.37116671e-04 -1.36126952e+00  3.65688961e-01], ball position: [-2.89070249 -1.01278027  0.21463282]
+2023-11-10 11:49:04.942835: END: Episode count 2694, Episode length: 0.32400000000000023, Score: 2.9064049070648097
+2023-11-10 11:49:04.948891: START: Episode count: 2695
+2023-11-10 11:49:04.954878: Initial player position: [ 4.81678858 -2.85887215  0.365     ], ball position: [ 1.69734088 -0.18286957  0.215     ]
+2023-11-10 11:49:05.274367: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:05.284372: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:05.296343: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:05.307304: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:05.317277: Episode count 2695, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:05.325245: Final player position: [ 3.11130345 -2.70193761  0.36597654], ball position: [ 1.69734088 -0.18286957  0.21463282]
+2023-11-10 11:49:05.331241: END: Episode count 2695, Episode length: 0.36000000000000026, Score: 2.606805937991068
+2023-11-10 11:49:05.337231: START: Episode count: 2696
+2023-11-10 11:49:05.344212: Initial player position: [-5.2036279  -0.04957559  0.365     ], ball position: [1.96544062 0.36424669 0.215     ]
+2023-11-10 11:49:07.989683: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:07.999656: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:08.009630: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:08.019603: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:08.029576: Episode count 2696, Actor loss: -2.1239700317382812, Critic loss: 0.008655944839119911
+2023-11-10 11:49:08.035560: Final player position: [1.57162798 0.71191355 0.36836923], ball position: [1.97654492 0.35903953 0.21507454]
+2023-11-10 11:49:08.042048: END: Episode count 2696, Episode length: 2.8259999999999104, Score: 20.648286361631907
+2023-11-10 11:49:08.047814: START: Episode count: 2697
+2023-11-10 11:49:08.054796: Initial player position: [ 2.68852048 -3.44246343  0.365     ], ball position: [ 0.68108036 -0.97031187  0.215     ]
+2023-11-10 11:49:09.790062: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:09.800035: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:09.809011: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:09.819247: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:09.829009: Episode count 2697, Actor loss: -2.0109097957611084, Critic loss: 0.036163076758384705
+2023-11-10 11:49:09.836203: Final player position: [ 2.35878734 -1.0366966   0.36507943], ball position: [ 0.68108036 -0.97031187  0.21463282]
+2023-11-10 11:49:09.842222: END: Episode count 2697, Episode length: 1.8540000000000014, Score: 3.981534796890167
+2023-11-10 11:49:09.848206: START: Episode count: 2698
+2023-11-10 11:49:09.854190: Initial player position: [-0.98210154 -1.98493871  0.365     ], ball position: [-1.92689112 -0.43792707  0.215     ]
+2023-11-10 11:49:09.956575: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:09.965957: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:09.977029: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:09.987002: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:09.996975: Episode count 2698, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:10.003957: Final player position: [-1.51468306 -2.0266419   0.36593812], ball position: [-1.92689112 -0.43792707  0.21463241]
+2023-11-10 11:49:10.009619: END: Episode count 2698, Episode length: 0.12600000000000008, Score: -0.4295418990929465
+2023-11-10 11:49:10.015604: START: Episode count: 2699
+2023-11-10 11:49:10.021588: Initial player position: [ 1.35745209 -2.91784397  0.365     ], ball position: [-0.54364522  0.88027467  0.215     ]
+2023-11-10 11:49:15.171612: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:15.181553: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:15.191526: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:15.200478: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:15.210451: Episode count 2699, Actor loss: -3.9968658685684204, Critic loss: 0.05786602199077606
+2023-11-10 11:49:15.216407: Final player position: [-0.74886787  1.39357864  0.36597376], ball position: [-0.53838271  0.87889498  0.21475959]
+2023-11-10 11:49:15.224387: END: Episode count 2699, Episode length: 5.507999999999615, Score: 12.583895034991071
+2023-11-10 11:49:15.230369: START: Episode count: 2700
+2023-11-10 11:49:15.237714: Initial player position: [-0.21885713  1.63884607  0.365     ], ball position: [-1.37011216  1.08922755  0.215     ]
+2023-11-10 11:49:15.246741: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:15.257448: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:15.266491: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:15.276427: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:15.286395: Episode count 2700, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:15.292352: Final player position: [-0.20757055  1.64443042  0.36509548], ball position: [-1.37011216  1.08922755  0.21475841]
+2023-11-10 11:49:15.300334: END: Episode count 2700, Episode length: 0.018000000000000002, Score: -0.9155332544149153
+2023-11-10 11:49:15.308310: START: Episode count: 2701
+2023-11-10 11:49:15.319280: Initial player position: [3.04230187 3.40898059 0.365     ], ball position: [ 0.11951631 -0.9098531   0.215     ]
+2023-11-10 11:49:17.404191: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:17.415141: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:17.425119: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:17.435073: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:17.445046: Episode count 2701, Actor loss: -2.088047742843628, Critic loss: 0.01684267446398735
+2023-11-10 11:49:17.452028: Final player position: [ 0.44313021 -1.3263803   0.3655666 ], ball position: [ 0.11424359 -0.90203588  0.2142569 ]
+2023-11-10 11:49:17.457797: END: Episode count 2701, Episode length: 2.231999999999976, Score: 14.608365645579415
+2023-11-10 11:49:17.463530: START: Episode count: 2702
+2023-11-10 11:49:17.469547: Initial player position: [ 0.17690188 -1.07178109  0.365     ], ball position: [-0.35136691  0.18837968  0.215     ]
+2023-11-10 11:49:17.477933: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:17.488903: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:17.498893: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:17.508850: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:17.518498: Episode count 2702, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:17.524455: Final player position: [ 0.17948833 -1.07751376  0.3650365 ], ball position: [-0.35136691  0.18837968  0.21475841]
+2023-11-10 11:49:17.530472: END: Episode count 2702, Episode length: 0.018000000000000002, Score: -0.7537574102373619
+2023-11-10 11:49:17.536458: START: Episode count: 2703
+2023-11-10 11:49:17.542407: Initial player position: [ 4.86810606 -3.88892202  0.365     ], ball position: [-1.46079822 -0.4210917   0.215     ]
+2023-11-10 11:49:18.221558: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:18.232528: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:18.242501: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:18.252393: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:18.262788: Episode count 2703, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:18.269231: Final player position: [ 2.03245703 -2.95249741  0.36769704], ball position: [-1.46079822 -0.4210917   0.21463282]
+2023-11-10 11:49:18.275215: END: Episode count 2703, Episode length: 0.7380000000000005, Score: 6.646906795243921
+2023-11-10 11:49:18.281199: START: Episode count: 2704
+2023-11-10 11:49:18.286633: Initial player position: [ 2.92148423 -0.01703748  0.365     ], ball position: [1.90254405 1.11451027 0.215     ]
+2023-11-10 11:49:18.303873: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:18.314817: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:18.324789: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:18.334635: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:18.345036: Episode count 2704, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:18.351763: Final player position: [2.89027205 0.02414781 0.36665479], ball position: [1.90254405 1.11451027 0.21466744]
+2023-11-10 11:49:18.357136: END: Episode count 2704, Episode length: 0.03600000000000002, Score: -0.623371403342005
+2023-11-10 11:49:18.363127: START: Episode count: 2705
+2023-11-10 11:49:18.369071: Initial player position: [-3.88107917 -0.20041517  0.365     ], ball position: [ 2.2363624  -0.06785037  0.215     ]
+2023-11-10 11:49:18.919641: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:18.929648: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:18.939589: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:18.949578: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:18.959536: Episode count 2705, Actor loss: -1.8818544149398804, Critic loss: 0.06306704133749008
+2023-11-10 11:49:18.966091: Final player position: [-1.3346344   1.09877164  0.36761534], ball position: [ 2.2363624  -0.06785037  0.21463282]
+2023-11-10 11:49:18.971876: END: Episode count 2705, Episode length: 0.5760000000000004, Score: 5.886028249637447
+2023-11-10 11:49:18.977759: START: Episode count: 2706
+2023-11-10 11:49:18.984534: Initial player position: [2.1310934 2.9856699 0.365    ], ball position: [ 1.74668886 -0.47351589  0.215     ]
+2023-11-10 11:49:41.679117: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:41.690088: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:41.700061: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:41.710424: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:41.720198: Episode count 2706, Actor loss: -20.54110836982727, Critic loss: 0.4361297069117427
+2023-11-10 11:49:41.726182: Final player position: [ 2.22668031 -0.64516     0.36825883], ball position: [ 1.73145768 -0.46428841  0.21228079]
+2023-11-10 11:49:41.732196: END: Episode count 2706, Episode length: 24.17399999999748, Score: 10.584225976659985
+2023-11-10 11:49:41.738562: START: Episode count: 2707
+2023-11-10 11:49:41.744514: Initial player position: [1.19552863 0.3896668  0.365     ], ball position: [ 0.16495702 -0.93814376  0.215     ]
+2023-11-10 11:49:41.778130: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:41.788651: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:41.799510: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:41.808516: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:41.819564: Episode count 2707, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:41.825549: Final player position: [1.1353738  0.23610061 0.36727333], ball position: [ 0.16495702 -0.93814376  0.21463829]
+2023-11-10 11:49:41.831758: END: Episode count 2707, Episode length: 0.054000000000000034, Score: -0.2718703958390035
+2023-11-10 11:49:41.837609: START: Episode count: 2708
+2023-11-10 11:49:41.843594: Initial player position: [3.55606509 3.03133053 0.365     ], ball position: [-0.19396321 -0.45288941  0.215     ]
+2023-11-10 11:49:42.212533: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:42.223010: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:42.232023: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:42.242994: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:42.252457: Episode count 2708, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:42.258414: Final player position: [2.28352623 1.58975333 0.37148643], ball position: [-0.19396321 -0.45288941  0.21463282]
+2023-11-10 11:49:42.264398: END: Episode count 2708, Episode length: 0.4140000000000003, Score: 4.682016566583565
+2023-11-10 11:49:42.272378: START: Episode count: 2709
+2023-11-10 11:49:42.280388: Initial player position: [1.26599372 0.74279144 0.365     ], ball position: [-0.60823445 -0.08751059  0.215     ]
+2023-11-10 11:49:42.361940: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:42.371914: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:42.381850: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:42.391824: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:42.400826: Episode count 2709, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:42.407810: Final player position: [0.97663446 0.56220883 0.36908059], ball position: [-0.60823445 -0.08751059  0.21463112]
+2023-11-10 11:49:42.413764: END: Episode count 2709, Episode length: 0.09000000000000007, Score: 0.23417737528844196
+2023-11-10 11:49:42.419749: START: Episode count: 2710
+2023-11-10 11:49:42.426763: Initial player position: [-0.31553826 -0.42013725  0.365     ], ball position: [ 2.36603698 -0.41253295  0.215     ]
+2023-11-10 11:49:42.612007: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:42.621702: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:42.631697: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:42.641604: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:42.651575: Episode count 2710, Actor loss: -2.0091769695281982, Critic loss: 0.037716373801231384
+2023-11-10 11:49:42.657528: Final player position: [ 0.39678231 -0.77526481  0.36570642], ball position: [ 2.36603698 -0.41253295  0.21463281]
+2023-11-10 11:49:42.663990: END: Episode count 2710, Episode length: 0.18000000000000013, Score: 1.1472528335898244
+2023-11-10 11:49:42.671971: START: Episode count: 2711
+2023-11-10 11:49:42.677959: Initial player position: [-5.64050532  3.80715985  0.365     ], ball position: [-1.48663079  0.05594534  0.215     ]
+2023-11-10 11:49:43.078621: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:43.088154: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:43.098106: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:43.108059: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:43.118032: Episode count 2711, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:43.124989: Final player position: [-4.57714613  1.83065973  0.36760432], ball position: [-1.48663079  0.05594534  0.21463282]
+2023-11-10 11:49:43.131521: END: Episode count 2711, Episode length: 0.45000000000000034, Score: 4.739283204524947
+2023-11-10 11:49:43.137541: START: Episode count: 2712
+2023-11-10 11:49:43.144489: Initial player position: [-2.86860759  2.77875397  0.365     ], ball position: [ 1.41173888 -0.39056352  0.215     ]
+2023-11-10 11:49:43.528508: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:43.538449: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:43.548898: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:43.559286: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:43.568938: Episode count 2712, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:43.575915: Final player position: [-1.49891248  1.19106944  0.3709587 ], ball position: [ 1.41173888 -0.39056352  0.21463282]
+2023-11-10 11:49:43.581526: END: Episode count 2712, Episode length: 0.43200000000000033, Score: 4.968038638858119
+2023-11-10 11:49:43.587612: START: Episode count: 2713
+2023-11-10 11:49:43.594566: Initial player position: [-0.93245014 -3.67622269  0.365     ], ball position: [1.70445248 0.7889246  0.215     ]
+2023-11-10 11:49:44.027493: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:44.038465: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:44.048438: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:44.058760: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:44.068590: Episode count 2713, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:44.075201: Final player position: [ 1.01163264 -2.48950846  0.37183524], ball position: [1.70445248 0.7889246  0.21463282]
+2023-11-10 11:49:44.080789: END: Episode count 2713, Episode length: 0.4860000000000004, Score: 4.483686606295334
+2023-11-10 11:49:44.086830: START: Episode count: 2714
+2023-11-10 11:49:44.092849: Initial player position: [0.68787539 1.58810158 0.365     ], ball position: [ 1.10553773 -0.55774943  0.215     ]
+2023-11-10 11:49:44.177746: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:44.188718: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:44.198229: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:44.208199: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:44.218172: Episode count 2714, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:44.225128: Final player position: [0.62924378 1.16393094 0.36682901], ball position: [ 1.10553773 -0.55774943  0.21463185]
+2023-11-10 11:49:44.231790: END: Episode count 2714, Episode length: 0.10800000000000008, Score: 0.37345431377112237
+2023-11-10 11:49:44.237777: START: Episode count: 2715
+2023-11-10 11:49:44.243762: Initial player position: [5.12032804 1.51027374 0.365     ], ball position: [1.59738569 0.92569885 0.215     ]
+2023-11-10 11:49:44.461672: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:44.471644: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:44.481618: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:44.492588: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:44.503345: Episode count 2715, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:44.509904: Final player position: [4.06521076 1.15947472 0.36573338], ball position: [1.59738569 0.92569885 0.21463282]
+2023-11-10 11:49:44.515689: END: Episode count 2715, Episode length: 0.25200000000000017, Score: 2.3128954584022496
+2023-11-10 11:49:44.521563: START: Episode count: 2716
+2023-11-10 11:49:44.528577: Initial player position: [5.22148005 3.88342261 0.365     ], ball position: [-0.82946726 -0.42808788  0.215     ]
+2023-11-10 11:49:45.144763: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:45.155745: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:45.165739: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:45.175680: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:45.186355: Episode count 2716, Actor loss: -2.079875946044922, Critic loss: 0.03346748277544975
+2023-11-10 11:49:45.192877: Final player position: [2.56168033 2.31557676 0.36874745], ball position: [-0.82946726 -0.42808788  0.21463282]
+2023-11-10 11:49:45.198905: END: Episode count 2716, Episode length: 0.6480000000000005, Score: 7.744143498347668
+2023-11-10 11:49:45.204891: START: Episode count: 2717
+2023-11-10 11:49:45.210876: Initial player position: [ 4.15867275 -3.8674505   0.365     ], ball position: [-2.19707138 -0.47607724  0.215     ]
+2023-11-10 11:49:45.911183: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:45.921157: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:45.931130: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:45.941103: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:45.951077: Episode count 2717, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:45.958058: Final player position: [ 1.40770113 -2.71975551  0.3680721 ], ball position: [-2.19707138 -0.47607724  0.21463282]
+2023-11-10 11:49:45.964042: END: Episode count 2717, Episode length: 0.7740000000000006, Score: 7.425574474525583
+2023-11-10 11:49:45.970027: START: Episode count: 2718
+2023-11-10 11:49:45.976010: Initial player position: [-3.77083771 -1.12893253  0.365     ], ball position: [0.12315242 0.45127712 0.215     ]
+2023-11-10 11:49:46.278467: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:46.291461: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:46.300801: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:46.311772: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:46.323011: Episode count 2718, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:46.329027: Final player position: [-2.51638094 -0.51836783  0.36619508], ball position: [0.12315242 0.45127712 0.21463282]
+2023-11-10 11:49:46.335310: END: Episode count 2718, Episode length: 0.34200000000000025, Score: 3.129254248873525
+2023-11-10 11:49:46.341311: START: Episode count: 2719
+2023-11-10 11:49:46.347303: Initial player position: [-2.62183428 -0.98725389  0.365     ], ball position: [2.4448288  0.53874224 0.215     ]
+2023-11-10 11:49:46.777554: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:46.787541: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:46.797505: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:46.806477: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:46.816450: Episode count 2719, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:46.823054: Final player position: [-0.78934346 -0.25692512  0.36831575], ball position: [2.4448288  0.53874224 0.21463282]
+2023-11-10 11:49:46.829073: END: Episode count 2719, Episode length: 0.46800000000000036, Score: 4.724774925681804
+2023-11-10 11:49:46.835057: START: Episode count: 2720
+2023-11-10 11:49:46.841453: Initial player position: [3.61363569 0.55726527 0.365     ], ball position: [-0.60295429 -0.2179568   0.215     ]
+2023-11-10 11:49:56.657580: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:56.667518: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:56.677519: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:56.687284: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:56.697254: Episode count 2720, Actor loss: -10.052918672561646, Critic loss: 0.20686358772218227
+2023-11-10 11:49:56.703481: Final player position: [-0.42670914 -0.67006104  0.36703201], ball position: [-0.61304724 -0.18511397  0.20849245]
+2023-11-10 11:49:56.709500: END: Episode count 2720, Episode length: 10.440000000000156, Score: 12.006509921587204
+2023-11-10 11:49:56.715484: START: Episode count: 2721
+2023-11-10 11:49:56.722433: Initial player position: [ 0.78921137 -1.12276725  0.365     ], ball position: [1.47158944 1.0538307  0.215     ]
+2023-11-10 11:49:56.807397: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:56.818340: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:56.829622: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:56.839595: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:56.849652: Episode count 2721, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:56.856627: Final player position: [ 0.9637472  -0.69315494  0.36853549], ball position: [1.47158944 1.0538307  0.21463185]
+2023-11-10 11:49:56.862615: END: Episode count 2721, Episode length: 0.10800000000000008, Score: 0.6307611253971189
+2023-11-10 11:49:56.868600: START: Episode count: 2722
+2023-11-10 11:49:56.875581: Initial player position: [-5.36434604 -2.41425116  0.365     ], ball position: [-0.58570742 -0.0467093   0.215     ]
+2023-11-10 11:49:57.273996: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:57.283606: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:57.293098: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:57.304008: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:57.313814: Episode count 2722, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:57.319835: Final player position: [-3.20480265 -2.25299072  0.37202867], ball position: [-0.58570742 -0.0467093   0.21463282]
+2023-11-10 11:49:57.325811: END: Episode count 2722, Episode length: 0.43200000000000033, Score: 4.72027344016738
+2023-11-10 11:49:57.332792: START: Episode count: 2723
+2023-11-10 11:49:57.340057: Initial player position: [ 1.00948055 -0.27922289  0.365     ], ball position: [-0.9618483  -0.25297593  0.215     ]
+2023-11-10 11:49:57.407279: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:57.417259: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:57.427368: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:57.437370: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:57.447695: Episode count 2723, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:57.454146: Final player position: [ 0.70086584 -0.45343923  0.3683856 ], ball position: [-0.9618483  -0.25297593  0.21463112]
+2023-11-10 11:49:57.460342: END: Episode count 2723, Episode length: 0.09000000000000007, Score: 0.09446263766496055
+2023-11-10 11:49:57.466269: START: Episode count: 2724
+2023-11-10 11:49:57.474254: Initial player position: [-1.42730679  2.65306578  0.365     ], ball position: [2.99985072 0.04979506 0.215     ]
+2023-11-10 11:49:57.806173: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:57.817144: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:57.827889: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:57.837862: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:57.848633: Episode count 2724, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:57.855123: Final player position: [0.18349005 1.66438039 0.36885866], ball position: [2.99985072 0.04979506 0.21463282]
+2023-11-10 11:49:57.861071: END: Episode count 2724, Episode length: 0.3780000000000003, Score: 4.618717720446239
+2023-11-10 11:49:57.867087: START: Episode count: 2725
+2023-11-10 11:49:57.874037: Initial player position: [2.60088417 0.86952895 0.365     ], ball position: [-0.70675289 -0.12782906  0.215     ]
+2023-11-10 11:49:58.073671: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:58.083134: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:58.093025: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:58.103036: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:58.113009: Episode count 2725, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:58.120385: Final player position: [1.63076524 0.37543576 0.36870142], ball position: [-0.70675289 -0.12782906  0.21463282]
+2023-11-10 11:49:58.126339: END: Episode count 2725, Episode length: 0.23400000000000018, Score: 2.29330017759005
+2023-11-10 11:49:58.132356: START: Episode count: 2726
+2023-11-10 11:49:58.138401: Initial player position: [-5.09654478  3.41935295  0.365     ], ball position: [-2.10057071 -1.01419341  0.215     ]
+2023-11-10 11:49:58.556226: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:58.567197: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:58.576831: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:58.587802: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:58.597754: Episode count 2726, Actor loss: -2.1695632934570312, Critic loss: 0.01924409531056881
+2023-11-10 11:49:58.603811: Final player position: [-4.32817235  1.46058448  0.37074192], ball position: [-2.10057071 -1.01419341  0.21463282]
+2023-11-10 11:49:58.609829: END: Episode count 2726, Episode length: 0.43200000000000033, Score: 4.978223587019061
+2023-11-10 11:49:58.616778: START: Episode count: 2727
+2023-11-10 11:49:58.622367: Initial player position: [-3.6277419  0.3667534  0.365    ], ball position: [ 1.83066456 -0.46747272  0.215     ]
+2023-11-10 11:49:59.022408: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:59.034377: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:59.043892: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:59.054182: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:59.064505: Episode count 2727, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:59.070521: Final player position: [-1.68207294 -0.61751869  0.36912839], ball position: [ 1.83066456 -0.46747272  0.21463282]
+2023-11-10 11:49:59.077471: END: Episode count 2727, Episode length: 0.45000000000000034, Score: 4.89657781694421
+2023-11-10 11:49:59.084452: START: Episode count: 2728
+2023-11-10 11:49:59.090436: Initial player position: [-4.27177568  2.9719574   0.365     ], ball position: [-2.73347213 -0.87292552  0.215     ]
+2023-11-10 11:49:59.355635: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:59.366606: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:59.376579: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:59.386553: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:59.396526: Episode count 2728, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:59.403508: Final player position: [-3.89992287  1.60160941  0.36783134], ball position: [-2.73347213 -0.87292552  0.21463282]
+2023-11-10 11:49:59.409492: END: Episode count 2728, Episode length: 0.3060000000000002, Score: 3.2604098490346924
+2023-11-10 11:49:59.415509: START: Episode count: 2729
+2023-11-10 11:49:59.423425: Initial player position: [-3.62164559  1.34625596  0.365     ], ball position: [0.13189159 0.12779187 0.215     ]
+2023-11-10 11:49:59.656536: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:59.666510: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:59.676483: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:59.686457: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:59.696430: Episode count 2729, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:59.703411: Final player position: [-2.34886242  1.09876723  0.36663507], ball position: [0.13189159 0.12779187 0.21463282]
+2023-11-10 11:49:59.709309: END: Episode count 2729, Episode length: 0.2700000000000002, Score: 2.86532594761244
+2023-11-10 11:49:59.715322: START: Episode count: 2730
+2023-11-10 11:49:59.722276: Initial player position: [-1.2307382   0.91534752  0.365     ], ball position: [ 0.13236966 -0.47728044  0.215     ]
+2023-11-10 11:49:59.773150: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:49:59.783123: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:49:59.793096: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:49:59.803070: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:49:59.813043: Episode count 2730, Actor loss: 0, Critic loss: 0
+2023-11-10 11:49:59.820024: Final player position: [-1.08340944  0.68730575  0.36506882], ball position: [ 0.13236966 -0.47728044  0.2146315 ]
+2023-11-10 11:49:59.825454: END: Episode count 2730, Episode length: 0.07200000000000005, Score: 0.008566765173652513
+2023-11-10 11:49:59.831472: START: Episode count: 2731
+2023-11-10 11:49:59.837639: Initial player position: [-0.64142575 -2.50191633  0.365     ], ball position: [ 2.46219646 -0.98397625  0.215     ]
+2023-11-10 11:50:00.089721: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:00.099694: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:00.111487: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:00.122471: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:00.132445: Episode count 2731, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:00.139514: Final player position: [ 0.66046808 -2.78441914  0.36864392], ball position: [ 2.46219646 -0.98397625  0.21463282]
+2023-11-10 11:50:00.145498: END: Episode count 2731, Episode length: 0.2880000000000002, Score: 1.804943325005033
+2023-11-10 11:50:00.151473: START: Episode count: 2732
+2023-11-10 11:50:00.157553: Initial player position: [-5.10996923  2.60593067  0.365     ], ball position: [1.03903768 0.66084653 0.215     ]
+2023-11-10 11:50:00.672828: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:00.682422: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:00.692395: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:00.703360: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:00.713539: Episode count 2732, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:00.719503: Final player position: [-2.81944018  1.30552741  0.3734346 ], ball position: [1.03903768 0.66084653 0.21463282]
+2023-11-10 11:50:00.725517: END: Episode count 2732, Episode length: 0.5580000000000004, Score: 6.421333224042338
+2023-11-10 11:50:00.732470: START: Episode count: 2733
+2023-11-10 11:50:00.738851: Initial player position: [ 1.9697079  -2.77840612  0.365     ], ball position: [-1.19242695  0.79362639  0.215     ]
+2023-11-10 11:50:01.105041: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:01.115409: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:01.125378: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:01.135357: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:01.145298: Episode count 2733, Actor loss: -1.9541242122650146, Critic loss: 0.026969298720359802
+2023-11-10 11:50:01.151309: Final player position: [ 0.87958519 -1.48126217  0.36790518], ball position: [-1.19242695  0.79362639  0.21463282]
+2023-11-10 11:50:01.157266: END: Episode count 2733, Episode length: 0.3780000000000003, Score: 4.016905360203614
+2023-11-10 11:50:01.163320: START: Episode count: 2734
+2023-11-10 11:50:01.169313: Initial player position: [1.42088974 2.36449607 0.365     ], ball position: [1.67550996 0.00294703 0.215     ]
+2023-11-10 11:50:01.272081: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:01.283052: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:01.293027: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:01.302998: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:01.313034: Episode count 2734, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:01.320025: Final player position: [1.52582133 1.88404952 0.36699939], ball position: [1.67550996 0.00294703 0.21463241]
+2023-11-10 11:50:01.326996: END: Episode count 2734, Episode length: 0.12600000000000008, Score: 0.6330916772979561
+2023-11-10 11:50:01.333007: START: Episode count: 2735
+2023-11-10 11:50:01.339961: Initial player position: [-3.57698585 -2.93129147  0.365     ], ball position: [2.45493344 0.55084778 0.215     ]
+2023-11-10 11:50:01.955524: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:01.966171: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:01.976116: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:01.986089: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:01.996063: Episode count 2735, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:02.003044: Final player position: [-0.6224104  -2.37287652  0.36789327], ball position: [2.45493344 0.55084778 0.21463282]
+2023-11-10 11:50:02.009028: END: Episode count 2735, Episode length: 0.6840000000000005, Score: 6.879596153673056
+2023-11-10 11:50:02.015012: START: Episode count: 2736
+2023-11-10 11:50:02.020995: Initial player position: [ 5.94464793 -3.25745151  0.365     ], ball position: [-0.84299127  0.28482578  0.215     ]
+2023-11-10 11:50:02.772043: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:02.783016: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:02.791990: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:02.801964: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:02.811937: Episode count 2736, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:02.818918: Final player position: [ 2.42699738 -2.81597449  0.36583152], ball position: [-0.84299127  0.28482578  0.21463282]
+2023-11-10 11:50:02.824903: END: Episode count 2736, Episode length: 0.8280000000000006, Score: 7.68517071626133
+2023-11-10 11:50:02.830648: START: Episode count: 2737
+2023-11-10 11:50:02.933770: Initial player position: [1.89358004 2.6538029  0.365     ], ball position: [ 1.12216587 -0.11860726  0.215     ]
+2023-11-10 11:50:03.138553: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:03.148871: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:03.158363: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:03.169502: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:03.179387: Episode count 2737, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:03.185300: Final player position: [2.30526777 1.78068927 0.36556605], ball position: [ 1.12216587 -0.11860726  0.21463282]
+2023-11-10 11:50:03.191316: END: Episode count 2737, Episode length: 0.21600000000000016, Score: 0.9965116687328225
+2023-11-10 11:50:03.198268: START: Episode count: 2738
+2023-11-10 11:50:03.204827: Initial player position: [ 5.30814884 -1.17645331  0.365     ], ball position: [1.40057346 0.38568261 0.215     ]
+2023-11-10 11:50:03.638531: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:03.648508: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:03.657480: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:03.667453: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:03.677427: Episode count 2738, Actor loss: -2.0702764987945557, Critic loss: 0.014708040282130241
+2023-11-10 11:50:03.684408: Final player position: [ 3.71204206 -1.31914219  0.37251594], ball position: [1.40057346 0.38568261 0.21463282]
+2023-11-10 11:50:03.690392: END: Episode count 2738, Episode length: 0.45000000000000034, Score: 3.0784804968949215
+2023-11-10 11:50:03.696376: START: Episode count: 2739
+2023-11-10 11:50:03.703357: Initial player position: [0.19845893 3.30460736 0.365     ], ball position: [2.76927871 0.76949419 0.215     ]
+2023-11-10 11:50:03.904781: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:03.914581: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:03.924775: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:03.934744: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:03.944715: Episode count 2739, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:03.950810: Final player position: [1.01417756 2.57209938 0.36637204], ball position: [2.76927871 0.76949419 0.21463282]
+2023-11-10 11:50:03.957795: END: Episode count 2739, Episode length: 0.23400000000000018, Score: 2.33616178384939
+2023-11-10 11:50:03.963533: START: Episode count: 2740
+2023-11-10 11:50:03.970550: Initial player position: [-4.47118731  0.15776764  0.365     ], ball position: [1.17395188 0.59891103 0.215     ]
+2023-11-10 11:50:04.371785: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:04.384749: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:04.396714: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:04.406338: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:04.416313: Episode count 2740, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:04.423289: Final player position: [-2.25366587 -0.26152952  0.37693379], ball position: [1.17395188 0.59891103 0.21463282]
+2023-11-10 11:50:04.428980: END: Episode count 2740, Episode length: 0.45000000000000034, Score: 5.327103846285095
+2023-11-10 11:50:04.434982: START: Episode count: 2741
+2023-11-10 11:50:04.440980: Initial player position: [ 4.48738541 -2.13697435  0.365     ], ball position: [2.10126648 0.24993761 0.215     ]
+2023-11-10 11:50:04.638054: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:04.648035: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:04.658001: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:04.667392: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:04.677366: Episode count 2741, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:04.684347: Final player position: [ 3.72453976 -1.45896     0.36665025], ball position: [2.10126648 0.24993761 0.21463282]
+2023-11-10 11:50:04.690241: END: Episode count 2741, Episode length: 0.21600000000000016, Score: 2.2001668669654855
+2023-11-10 11:50:04.696169: START: Episode count: 2742
+2023-11-10 11:50:04.704170: Initial player position: [ 0.10624973 -0.55028811  0.365     ], ball position: [-1.8398655   0.98417951  0.215     ]
+2023-11-10 11:50:04.804536: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:04.816504: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:04.826476: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:04.836449: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:04.846449: Episode count 2742, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:04.853435: Final player position: [-0.37642609 -0.2494505   0.36573251], ball position: [-1.8398655   0.98417951  0.21463241]
+2023-11-10 11:50:04.859297: END: Episode count 2742, Episode length: 0.12600000000000008, Score: 0.9069793366994086
+2023-11-10 11:50:04.865510: START: Episode count: 2743
+2023-11-10 11:50:04.872524: Initial player position: [0.10725269 3.98955586 0.365     ], ball position: [-1.98477712 -0.78073931  0.215     ]
+2023-11-10 11:50:05.203645: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:05.214616: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:05.223592: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:05.233819: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:05.245721: Episode count 2743, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:05.251525: Final player position: [-0.37091463  2.01200822  0.36758433], ball position: [-1.98477712 -0.78073931  0.21463282]
+2023-11-10 11:50:05.259507: END: Episode count 2743, Episode length: 0.3780000000000003, Score: 4.603092995925411
+2023-11-10 11:50:05.265490: START: Episode count: 2744
+2023-11-10 11:50:05.271480: Initial player position: [-3.48869056 -2.7121174   0.365     ], ball position: [ 0.28793921 -0.24211854  0.215     ]
+2023-11-10 11:50:05.587686: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:05.599104: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:05.608108: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:05.618086: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:05.628052: Episode count 2744, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:05.634009: Final player position: [-1.86987499 -2.16436653  0.37219774], ball position: [ 0.28793921 -0.24211854  0.21463282]
+2023-11-10 11:50:05.640424: END: Episode count 2744, Episode length: 0.36000000000000026, Score: 3.878611395152376
+2023-11-10 11:50:05.646360: START: Episode count: 2745
+2023-11-10 11:50:05.652347: Initial player position: [3.67522571 2.54744521 0.365     ], ball position: [-0.89053145 -0.41687514  0.215     ]
+2023-11-10 11:50:06.103979: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:06.115195: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:06.125169: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:06.135150: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:06.146118: Episode count 2745, Actor loss: -2.0301380157470703, Critic loss: 0.08837636560201645
+2023-11-10 11:50:06.152103: Final player position: [2.43122302 0.70022614 0.37103368], ball position: [-0.89053145 -0.41687514  0.21463282]
+2023-11-10 11:50:06.158628: END: Episode count 2745, Episode length: 0.46800000000000036, Score: 4.7104544673739905
+2023-11-10 11:50:06.164647: START: Episode count: 2746
+2023-11-10 11:50:06.171596: Initial player position: [ 1.04258553 -2.67702521  0.365     ], ball position: [0.5058999  0.67880851 0.215     ]
+2023-11-10 11:50:06.371824: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:06.395761: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:06.412563: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:06.422531: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:06.432518: Episode count 2746, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:06.439481: Final player position: [ 0.5524219  -1.66544394  0.36560732], ball position: [0.5058999  0.67880851 0.21463282]
+2023-11-10 11:50:06.445354: END: Episode count 2746, Episode length: 0.23400000000000018, Score: 2.2141543479501142
+2023-11-10 11:50:06.451341: START: Episode count: 2747
+2023-11-10 11:50:06.458322: Initial player position: [2.80649551 1.94035495 0.365     ], ball position: [ 2.80029591 -0.14373903  0.215     ]
+2023-11-10 11:50:06.553875: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:06.563850: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:06.573885: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:06.584174: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:06.594619: Episode count 2747, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:06.600599: Final player position: [3.04080133 1.54405024 0.36778631], ball position: [ 2.80029591 -0.14373903  0.21463185]
+2023-11-10 11:50:06.606875: END: Episode count 2747, Episode length: 0.10800000000000008, Score: 0.3591205545598454
+2023-11-10 11:50:06.612861: START: Episode count: 2748
+2023-11-10 11:50:06.620418: Initial player position: [ 0.78785229 -0.40502787  0.365     ], ball position: [ 0.30015651 -0.5469489   0.215     ]
+2023-11-10 11:50:06.628397: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:06.638373: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:06.647346: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:06.657564: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:06.667694: Episode count 2748, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:06.674274: Final player position: [ 0.84979733 -0.38672919  0.37023052], ball position: [ 0.18660124 -0.5794491   0.19229165]
+2023-11-10 11:50:06.680226: END: Episode count 2748, Episode length: 0.018000000000000002, Score: -0.8669633326537762
+2023-11-10 11:50:06.687207: START: Episode count: 2749
+2023-11-10 11:50:06.694189: Initial player position: [ 3.24468784 -0.92984574  0.365     ], ball position: [-2.15853278 -0.35911482  0.215     ]
+2023-11-10 11:50:07.070515: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:07.081511: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:07.091755: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:07.102726: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:07.112178: Episode count 2749, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:07.118515: Final player position: [ 1.15589961 -1.29825536  0.36787402], ball position: [-2.15853278 -0.35911482  0.21463282]
+2023-11-10 11:50:07.125499: END: Episode count 2749, Episode length: 0.4140000000000003, Score: 4.86620999965965
+2023-11-10 11:50:07.131219: START: Episode count: 2750
+2023-11-10 11:50:07.139199: Initial player position: [-1.29853948  3.7986149   0.365     ], ball position: [-2.31666598 -1.02790116  0.215     ]
+2023-11-10 11:50:07.469416: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:07.480694: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:07.490694: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:07.501663: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:07.513046: Episode count 2750, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:07.519613: Final player position: [-1.40910652  1.9435933   0.36827532], ball position: [-2.31666598 -1.02790116  0.21463282]
+2023-11-10 11:50:07.525566: END: Episode count 2750, Episode length: 0.36000000000000026, Score: 4.341287741377106
+2023-11-10 11:50:07.531533: START: Episode count: 2751
+2023-11-10 11:50:07.538517: Initial player position: [1.0158046  3.64436293 0.365     ], ball position: [-1.23272046  1.04947264  0.215     ]
+2023-11-10 11:50:07.720196: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:07.730168: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:07.740142: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:07.749139: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:07.759173: Episode count 2751, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:07.766100: Final player position: [0.50422068 2.6912993  0.36512346], ball position: [-1.23272046  1.04947264  0.21463282]
+2023-11-10 11:50:07.772057: END: Episode count 2751, Episode length: 0.21600000000000016, Score: 2.196435200582434
+2023-11-10 11:50:07.778070: START: Episode count: 2752
+2023-11-10 11:50:07.785296: Initial player position: [-4.33495668 -3.23395842  0.365     ], ball position: [0.81163344 0.62962798 0.215     ]
+2023-11-10 11:50:08.320261: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:08.330235: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:08.340208: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:08.350181: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:08.360155: Episode count 2752, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:08.367171: Final player position: [-1.21555153 -2.59009578  0.3656175 ], ball position: [0.81163344 0.62962798 0.21463282]
+2023-11-10 11:50:08.373218: END: Episode count 2752, Episode length: 0.5940000000000004, Score: 6.680234079029789
+2023-11-10 11:50:08.379233: START: Episode count: 2753
+2023-11-10 11:50:08.386186: Initial player position: [-3.64618601  1.41065262  0.365     ], ball position: [-2.88298582  0.43775102  0.215     ]
+2023-11-10 11:50:08.394961: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:08.404590: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:08.414694: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:08.424389: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:08.435491: Episode count 2753, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:08.441365: Final player position: [-3.65557219  1.42243692  0.36488821], ball position: [-2.88298582  0.43775102  0.21475841]
+2023-11-10 11:50:08.448378: END: Episode count 2753, Episode length: 0.018000000000000002, Score: -0.8011642275666142
+2023-11-10 11:50:08.454334: START: Episode count: 2754
+2023-11-10 11:50:08.461315: Initial player position: [-2.48582831 -1.81522465  0.365     ], ball position: [1.33308733 0.50483518 0.215     ]
+2023-11-10 11:50:08.853253: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:08.863229: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:08.873195: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:08.883162: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:08.893140: Episode count 2754, Actor loss: -2.0595619678497314, Critic loss: 0.01573226973414421
+2023-11-10 11:50:08.900121: Final player position: [-0.50189062 -1.91380563  0.36751749], ball position: [1.33308733 0.50483518 0.21463282]
+2023-11-10 11:50:08.906112: END: Episode count 2754, Episode length: 0.3960000000000003, Score: 3.282252388454388
+2023-11-10 11:50:08.913094: START: Episode count: 2755
+2023-11-10 11:50:08.919077: Initial player position: [ 1.82136345 -2.7668819   0.365     ], ball position: [ 1.97184771 -1.06140921  0.215     ]
+2023-11-10 11:50:08.969969: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:08.980456: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:08.989445: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:08.999418: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:09.010376: Episode count 2755, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:09.016596: Final player position: [ 2.0492612  -2.60710948  0.36489006], ball position: [ 1.97184771 -1.06140921  0.2146315 ]
+2023-11-10 11:50:09.023580: END: Episode count 2755, Episode length: 0.07200000000000005, Score: -0.31680473470662784
+2023-11-10 11:50:09.029597: START: Episode count: 2756
+2023-11-10 11:50:09.036545: Initial player position: [-0.05678969 -0.05361779  0.365     ], ball position: [-0.77547826 -1.05855303  0.215     ]
+2023-11-10 11:50:09.044523: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:09.054848: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:09.064815: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:09.074792: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:09.084774: Episode count 2756, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:09.091749: Final player position: [-0.04787008 -0.0413882   0.3648881 ], ball position: [-0.77547826 -1.05855303  0.21475841]
+2023-11-10 11:50:09.097701: END: Episode count 2756, Episode length: 0.018000000000000002, Score: -0.7559409364349078
+2023-11-10 11:50:09.103636: START: Episode count: 2757
+2023-11-10 11:50:09.109622: Initial player position: [-0.35952854 -2.55711134  0.365     ], ball position: [0.03642126 0.31220493 0.215     ]
+2023-11-10 11:50:09.302675: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:09.312789: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:09.323484: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:09.334502: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:09.344576: Episode count 2757, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:09.351905: Final player position: [ 0.16684611 -1.76496132  0.36826252], ball position: [0.03642126 0.31220493 0.21463282]
+2023-11-10 11:50:09.358545: END: Episode count 2757, Episode length: 0.21600000000000016, Score: 1.606815170447556
+2023-11-10 11:50:09.364564: START: Episode count: 2758
+2023-11-10 11:50:09.371860: Initial player position: [0.23503786 2.48834624 0.365     ], ball position: [-0.14857449 -0.41572492  0.215     ]
+2023-11-10 11:50:09.536521: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:09.547496: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:09.556467: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:09.567438: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:09.577411: Episode count 2758, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:09.584393: Final player position: [0.01778299 1.72436582 0.36680751], ball position: [-0.14857449 -0.41572492  0.21463281]
+2023-11-10 11:50:09.590377: END: Episode count 2758, Episode length: 0.18000000000000013, Score: 1.4890998488139162
+2023-11-10 11:50:09.596161: START: Episode count: 2759
+2023-11-10 11:50:09.603614: Initial player position: [-2.9352827   3.55709846  0.365     ], ball position: [-0.66161416 -0.29358436  0.215     ]
+2023-11-10 11:50:09.919724: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:09.929697: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:09.940667: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:09.950902: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:09.960880: Episode count 2759, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:09.966826: Final player position: [-2.63996146  1.90460136  0.37045682], ball position: [-0.66161416 -0.29358436  0.21463282]
+2023-11-10 11:50:09.973512: END: Episode count 2759, Episode length: 0.36000000000000026, Score: 3.5306187680593792
+2023-11-10 11:50:09.979455: START: Episode count: 2760
+2023-11-10 11:50:09.985460: Initial player position: [ 5.78546764 -0.03209111  0.365     ], ball position: [-2.57047634  0.95733687  0.215     ]
+2023-11-10 11:50:10.702348: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:10.711940: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:10.723244: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:10.732648: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:10.742629: Episode count 2760, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:10.749611: Final player position: [2.18363117 1.6786602  0.48843612], ball position: [-2.57047634  0.95733687  0.21463282]
+2023-11-10 11:50:10.755254: END: Episode count 2760, Episode length: 0.7920000000000006, Score: 8.942900501023065
+2023-11-10 11:50:10.761273: START: Episode count: 2761
+2023-11-10 11:50:10.768222: Initial player position: [1.80164279 4.06547801 0.365     ], ball position: [2.07285303 0.72127279 0.215     ]
+2023-11-10 11:50:10.935945: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:10.946257: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:10.956144: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:10.965908: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:10.975883: Episode count 2761, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:10.982861: Final player position: [1.67510805 3.04586859 0.36743431], ball position: [2.07285303 0.72127279 0.21463282]
+2023-11-10 11:50:10.988536: END: Episode count 2761, Episode length: 0.19800000000000015, Score: 1.6881015697937147
+2023-11-10 11:50:10.995508: START: Episode count: 2762
+2023-11-10 11:50:11.057313: Initial player position: [-3.26778879  1.96765626  0.365     ], ball position: [ 1.09964453 -0.89038164  0.215     ]
+2023-11-10 11:50:11.485809: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:11.495782: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:11.505755: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:11.515729: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:11.525776: Episode count 2762, Actor loss: -2.044869899749756, Critic loss: 0.023769181221723557
+2023-11-10 11:50:11.532684: Final player position: [-2.15004599  0.14965098  0.3669624 ], ball position: [ 1.09964453 -0.89038164  0.21463282]
+2023-11-10 11:50:11.538473: END: Episode count 2762, Episode length: 0.43200000000000033, Score: 4.309544317574762
+2023-11-10 11:50:11.544490: START: Episode count: 2763
+2023-11-10 11:50:11.550860: Initial player position: [-0.6754071  -3.53452326  0.365     ], ball position: [1.99140251 0.32781351 0.215     ]
+2023-11-10 11:50:13.351676: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:13.362936: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:13.372898: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:13.382986: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:13.392958: Episode count 2763, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:13.399946: Final player position: [2.49222943 0.56497303 0.3683769 ], ball position: [1.99238136 0.3240352  0.2128017 ]
+2023-11-10 11:50:13.405619: END: Episode count 2763, Episode length: 1.9620000000000015, Score: 13.123716423742867
+2023-11-10 11:50:13.411639: START: Episode count: 2764
+2023-11-10 11:50:13.418587: Initial player position: [-2.20655807  3.04068754  0.365     ], ball position: [ 1.19668956 -0.90173783  0.215     ]
+2023-11-10 11:50:13.885047: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:13.895020: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:13.904994: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:13.915544: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:13.925503: Episode count 2764, Actor loss: -1.9910820722579956, Critic loss: 0.01361696794629097
+2023-11-10 11:50:13.931539: Final player position: [-1.74491616  0.71976735  0.36752335], ball position: [ 1.19668956 -0.90173783  0.21463282]
+2023-11-10 11:50:13.938523: END: Episode count 2764, Episode length: 0.4860000000000004, Score: 4.476453190270435
+2023-11-10 11:50:13.944507: START: Episode count: 2765
+2023-11-10 11:50:13.950491: Initial player position: [-5.95525087  4.08182347  0.365     ], ball position: [ 2.83193662 -1.08581159  0.215     ]
+2023-11-10 11:50:56.220738: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:56.230711: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:56.240684: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:56.250658: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:56.260631: Episode count 2765, Actor loss: -38.80594849586487, Critic loss: 0.908357122913003
+2023-11-10 11:50:56.267613: Final player position: [2.47800853 4.47586176 0.36545644], ball position: [ 2.83193662 -1.08581159  0.21463282]
+2023-11-10 11:50:56.273598: END: Episode count 2765, Episode length: 45.00000000000903, Score: 290.3192383495572
+2023-11-10 11:50:56.280578: START: Episode count: 2766
+2023-11-10 11:50:56.287559: Initial player position: [ 5.68682305 -3.04940186  0.365     ], ball position: [-1.70102297 -0.60608527  0.215     ]
+2023-11-10 11:50:56.920167: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:56.930137: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:56.940130: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:56.950081: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:56.960059: Episode count 2766, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:56.967010: Final player position: [ 2.13943425 -3.12220081  0.36588456], ball position: [-1.70102297 -0.60608527  0.21463282]
+2023-11-10 11:50:56.973119: END: Episode count 2766, Episode length: 0.7020000000000005, Score: 8.099460357596477
+2023-11-10 11:50:56.979132: START: Episode count: 2767
+2023-11-10 11:50:56.986087: Initial player position: [-2.50917275  1.44595132  0.365     ], ball position: [-0.072751    0.51766605  0.215     ]
+2023-11-10 11:50:57.103308: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:57.113356: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:57.124430: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:57.133839: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:57.143821: Episode count 2767, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:57.150800: Final player position: [-1.85107589  1.38172333  0.36709013], ball position: [-0.072751    0.51766605  0.21463268]
+2023-11-10 11:50:57.156779: END: Episode count 2767, Episode length: 0.1440000000000001, Score: 1.0539544740961404
+2023-11-10 11:50:57.163973: START: Episode count: 2768
+2023-11-10 11:50:57.170986: Initial player position: [2.72959707 2.20931668 0.365     ], ball position: [-0.47115142  0.80013971  0.215     ]
+2023-11-10 11:50:57.436995: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:57.448963: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:57.459398: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:57.468931: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:57.478897: Episode count 2768, Actor loss: -1.9846001863479614, Critic loss: 0.044282183051109314
+2023-11-10 11:50:57.485880: Final player position: [1.89485274 1.31519051 0.36862579], ball position: [-0.47115142  0.80013971  0.21463282]
+2023-11-10 11:50:57.492854: END: Episode count 2768, Episode length: 0.25200000000000017, Score: 2.331016216852704
+2023-11-10 11:50:57.498810: START: Episode count: 2769
+2023-11-10 11:50:57.505825: Initial player position: [ 5.4357326  -1.77102211  0.365     ], ball position: [ 0.63804172 -1.05296009  0.215     ]
+2023-11-10 11:50:57.852794: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:57.864373: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:57.874101: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:57.884048: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:57.894021: Episode count 2769, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:57.900631: Final player position: [ 3.57366176 -1.89253109  0.37166822], ball position: [ 0.63804172 -1.05296009  0.21463282]
+2023-11-10 11:50:57.906584: END: Episode count 2769, Episode length: 0.3780000000000003, Score: 4.255263417624108
+2023-11-10 11:50:57.912687: START: Episode count: 2770
+2023-11-10 11:50:57.919671: Initial player position: [0.8148873  2.66562281 0.365     ], ball position: [0.20551501 0.62772993 0.215     ]
+2023-11-10 11:50:57.986812: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:57.996785: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:58.006758: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:58.016731: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:58.026705: Episode count 2770, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:58.033686: Final player position: [0.80350737 2.29018402 0.36720984], ball position: [0.20551501 0.62772993 0.21463112]
+2023-11-10 11:50:58.040667: END: Episode count 2770, Episode length: 0.09000000000000007, Score: 0.2816505970941151
+2023-11-10 11:50:58.047648: START: Episode count: 2771
+2023-11-10 11:50:58.054773: Initial player position: [-4.99394033  1.91292339  0.365     ], ball position: [-2.60795805 -0.72950882  0.215     ]
+2023-11-10 11:50:58.253357: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:58.264770: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:58.274757: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:58.284754: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:58.294895: Episode count 2771, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:58.301879: Final player position: [-4.27991849  1.11461984  0.36495215], ball position: [-2.60795805 -0.72950882  0.21463282]
+2023-11-10 11:50:58.307863: END: Episode count 2771, Episode length: 0.21600000000000016, Score: 2.276041397543842
+2023-11-10 11:50:58.314303: START: Episode count: 2772
+2023-11-10 11:50:58.321287: Initial player position: [-2.37044707  1.52846724  0.365     ], ball position: [-0.68664351  0.89752461  0.215     ]
+2023-11-10 11:50:58.352287: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:58.363258: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:58.373231: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:58.384202: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:58.395173: Episode count 2772, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:58.402101: Final player position: [-2.17630486  1.5284191   0.36701319], ball position: [-0.68664351  0.89752461  0.21463829]
+2023-11-10 11:50:58.408018: END: Episode count 2772, Episode length: 0.054000000000000034, Score: -0.21353964407309156
+2023-11-10 11:50:58.414999: START: Episode count: 2773
+2023-11-10 11:50:58.421762: Initial player position: [-2.43245079  1.91051439  0.365     ], ball position: [-1.86813882 -0.43205838  0.215     ]
+2023-11-10 11:50:58.519937: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:58.529911: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:58.539884: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:58.550027: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:58.560766: Episode count 2773, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:58.567381: Final player position: [-2.25029118  1.44512144  0.3663992 ], ball position: [-1.86813882 -0.43205838  0.21463185]
+2023-11-10 11:50:58.573534: END: Episode count 2773, Episode length: 0.10800000000000008, Score: 0.6701941469278144
+2023-11-10 11:50:58.579553: START: Episode count: 2774
+2023-11-10 11:50:58.587500: Initial player position: [-2.16480068  1.14402429  0.365     ], ball position: [-2.59848945 -1.03903235  0.215     ]
+2023-11-10 11:50:58.668902: Saving checkpoint to: Checkpoints/DDPG/Actor_ddpg
+2023-11-10 11:50:58.679873: Saving checkpoint to: Checkpoints/DDPG/TargetActor_ddpg
+2023-11-10 11:50:58.689846: Saving checkpoint to: Checkpoints/DDPG/Critic_ddpg
+2023-11-10 11:50:58.701852: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
+2023-11-10 11:50:58.711869: Episode count 2774, Actor loss: 0, Critic loss: 0
+2023-11-10 11:50:58.718112: Final player position: [-2.14606125  0.67478147  0.36821089], ball position: [-2.59848945 -1.03903235  0.21463185]
+2023-11-10 11:50:58.725096: END: Episode count 2774, Episode length: 0.10800000000000008, Score: 0.6357085061826043
+2023-11-10 11:50:58.732077: START: Episode count: 2775
