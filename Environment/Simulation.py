@@ -195,7 +195,7 @@ class Simulation:
 				
 				self.env.player.ai.save_models()
 
-				self.logger.write("Episode count {0}, Actor loss: {0}, Critic loss: {1}".format(episode_count, episode_actor_loss, episode_critic_loss))
+				self.logger.write("Episode count {0}, Actor loss: {1}, Critic loss: {2}".format(episode_count, episode_actor_loss, episode_critic_loss))
 				self.logger.write("Final player position: {0}, ball position: {1}".format(self.env.player.get_position(self.data), self.env.ball.get_position(self.data)))
 				self.logger.write("END: Episode count {0}, Episode length: {1}, Score: {2}".format(episode_count, self.data.time ,self.score))
 

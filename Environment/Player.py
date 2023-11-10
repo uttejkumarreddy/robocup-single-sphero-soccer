@@ -6,7 +6,7 @@ import time
 
 from AI import DDPG
 from AI.DDPG import ALPHA, BETA, TAU, GAMMA, BUFFER_SIZE, LAYER_1_SIZE, LAYER_2_SIZE, BATCH_SIZE
-from Configurations import Environment as envProps
+from Configurations import Environment as p
 from Utilities.Logger import Logger
 
 class Player:
@@ -81,7 +81,12 @@ class Player:
 			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
-			goal_position = (5.85, 0)
+			goal_position = None
+			if self.team == p.TEAM_HOME:
+				goal_position = (p.OBSERVATION_SPACE[os.environ['SOCCER_DIMS']]['GOAL_AWAY_TOP'][0], 0) 
+			else:
+				goal_position = (p.OBSERVATION_SPACE[os.environ['SOCCER_DIMS']]['GOAL_HOME_TOP'][0], 0)
+
 			ball_to_goal_unit_vector = (goal_position - ball_position) / np.linalg.norm(goal_position - ball_position)
 			reward_vel_ball_to_goal = np.dot(ball_velocity, ball_to_goal_unit_vector)
 
@@ -102,7 +107,7 @@ class Player:
 			for c in contacts:
 				if c.geom1 == ball.id_geom and c.geom2 in self.out_of_bounds_geoms.values() \
 					or c.geom1 in self.out_of_bounds_geoms.values() and c.geom2 == ball.id_geom:
-					reward_out_of_bounds = -0.1
+					reward_out_of_bounds = -0.5
 					out_of_bound_position = ball.get_position(data)
 
 					# Stop movements
