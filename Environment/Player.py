@@ -156,7 +156,6 @@ class Player:
 
 				if c.geom1 == self.id_geom and c.geom2 == ball.id_geom \
 					or c.geom1 == ball.id_geom and c.geom2 == self.id_geom:
-					reward_collision = -1
 					done = True
 
 			return (reward_collision + (0.05 * reward_vel_to_ball)), done
