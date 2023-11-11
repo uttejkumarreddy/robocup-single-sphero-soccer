@@ -77,8 +77,8 @@ class Player:
 			ball_velocity = ball.get_velocity(data)[:2]
 
 			# vel-to-ball: player's linear velocity projected onto its unit direction vector towards the ball, thresholded at zero
-			player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
-			reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
+			# player_to_ball_unit_vector = (ball_position - player_position) / np.linalg.norm(ball_position - player_position)
+			# reward_vel_to_ball = np.dot(player_velocity, player_to_ball_unit_vector)
 
 			# vel-ball-to-goal: ball's linear velocity projected onto its unit direction vector towards the center of the opponent's goal
 			goal_position = None
@@ -132,4 +132,4 @@ class Player:
 			# 			self.set_position(data, [out_of_bound_position[0] + displacement_player, out_of_bound_position[1], out_of_bound_position[2]])
 			# 			ball.set_position(data, [out_of_bound_position[0] - displacement_ball, out_of_bound_position[1], out_of_bound_position[2]])
 
-			return (reward_goal + (0.05 * reward_vel_to_ball) + (0.1 * reward_vel_ball_to_goal)), reward_goal
+			return (reward_goal + (0.1 * reward_vel_ball_to_goal)), reward_goal

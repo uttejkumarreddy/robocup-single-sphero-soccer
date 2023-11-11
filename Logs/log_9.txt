@@ -999,3 +999,12 @@
 2023-11-11 05:25:30.380978: Saving checkpoint to: Checkpoints/DDPG/TargetCritic_ddpg
 2023-11-11 05:25:30.391948: Episode count 400, Actor loss: -44.15799570083618, Critic loss: 0.5814932901412249
 2023-11-11 05:25:30.398728: Final player position: [10.58541003 32.60472167  0.36529435], ball position: [ 9.76661965 32.50880042  0.21463282]
+2023-11-11 05:30:13.487001: Observation space: Box([-12.         -8.25        0.          0.         -3.1415927 -12.
+  -8.25        0.          0.        -11.475      -1.25      -11.475
+  -1.25     ], [1.2000000e+01 8.2500000e+00 5.0000000e+00 5.0000000e+00 3.1415927e+00
+ 1.2000000e+01 8.2500000e+00 1.8050542e+03 1.8050542e+03 1.1475000e+01
+ 1.2500000e+00 1.1475000e+01 1.2500000e+00], (13,), float32)
+2023-11-11 05:30:13.507944: Initializing DDPG Agent with alpha 0.0001 beta 0.001 input_dims [13] tau 0.001 gamma 0.99 n_actions 2 max_size 1000000 layer1_size 400 layer2_size 300 batch_size 128
+2023-11-11 05:30:16.417443: Loading checkpoint from: Checkpoints/DDPG/Actor_ddpg
+2023-11-11 05:30:16.461690: Player home_player_1 initialized. id_body 3 id_geom 20 id_joint 1
+2023-11-11 05:30:16.475677: Ball ball initialized. id_body 2 id_geom 19 id_joint 0
