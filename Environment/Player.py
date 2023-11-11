@@ -18,8 +18,8 @@ class Player:
 				self.id_geom = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, self.name)
 				self.id_joint = mj.mj_name2id(model, mj.mjtObj.mjOBJ_JOINT, self.name)
 
-				self.id_geom_goal_to_score_in_blue_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalE')
-				self.id_geom_goal_to_score_in_red_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'line_goalW')
+				self.id_geom_goal_to_score_in_blue_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'goalE_W')
+				self.id_geom_goal_to_score_in_red_team = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, 'goalW_E')
 
 				self.ai = DDPG.Agent(
 						alpha = ALPHA,
