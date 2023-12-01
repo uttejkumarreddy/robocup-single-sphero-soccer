@@ -131,7 +131,13 @@ class Environment_1A_0D_0K():
 				# Get new observation
 				new_observation = self.get_observation_space(data)
 
+				# Done if ball is in contact with player
 				done = False
+				for c in data.contact:
+					if c.geom1 == self.player.id_geom and c.geom2 == self.ball.id_geom \
+					or c.geom1 == self.ball.id_geom and c.geom2 == self.player.id_geom:
+						done = True
+
 				info = {}
 
 				return new_observation, reward, done, info

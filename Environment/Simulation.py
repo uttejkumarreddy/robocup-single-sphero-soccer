@@ -164,7 +164,7 @@ class Simulation:
 							and self.env.player.ai.memory.mem_cntr > 1000):
 							self.env.player.ai.learn()
 
-						if self.data.time > self.sim_length:
+						if (self.data.time > self.sim_length) or self.done == True:
 							break
 
 						mj.mjv_updateScene(
